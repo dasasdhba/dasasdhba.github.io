@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://dasasdhba.github.io/"/>
-  <updated>2020-04-16T16:03:49.653Z</updated>
+  <updated>2020-04-17T15:16:32.860Z</updated>
   <id>http://dasasdhba.github.io/</id>
   
   <author>
@@ -17,24 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://dasasdhba.github.io/hello-world/"/>
-    <id>http://dasasdhba.github.io/hello-world/</id>
+    <title>dasasdhba 的个人博客上线啦！！！</title>
+    <link href="http://dasasdhba.github.io/(life)%E4%B8%8A%E7%BA%BF/"/>
+    <id>http://dasasdhba.github.io/(life)%E4%B8%8A%E7%BA%BF/</id>
     <published>2020-04-16T16:03:49.653Z</published>
-    <updated>2020-04-16T16:03:49.653Z</updated>
+    <updated>2020-04-17T15:16:32.860Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>搞了半天总算是把这个博客架好了，以后有啥东西就往这里放啦~<br>不过还是有很多东西需要不断学习不断调整，嗯，继续努力！<br>域名啥的等我上大学再考虑，先就用这个（<br><a href="https://dasasdhba.github.io">https://dasasdhba.github.io</a></p><p>嗯，欢迎评论哦~</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+        &lt;p&gt;搞了半天总算是把这个博客架好了，以后有啥东西就往这里放啦~&lt;br&gt;不过还是有很多东西需要不断学习不断调整，嗯，继续努力！&lt;br&gt;域名啥的等我上大学再考虑，先就用这个（&lt;br&gt;&lt;a href=&quot;https://dasasdhba.github.io&quot;&gt;https://dasa
       
     
     </summary>
     
     
+      <category term="生活琐事" scheme="http://dasasdhba.github.io/categories/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
+    
+    
+      <category term="生活琐事" scheme="http://dasasdhba.github.io/tags/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/"/>
     
   </entry>
   
