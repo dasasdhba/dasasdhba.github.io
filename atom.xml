@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://dasasdhba.github.io/"/>
   <updated>2020-04-16T16:03:49.653Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://dasasdhba.github.io/</id>
   
   <author>
     <name>dasasdhba</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2020/04/17/hello-world/"/>
-    <id>http://yoursite.com/2020/04/17/hello-world/</id>
+    <link href="http://dasasdhba.github.io/hello-world/"/>
+    <id>http://dasasdhba.github.io/hello-world/</id>
     <published>2020-04-16T16:03:49.653Z</published>
     <updated>2020-04-16T16:03:49.653Z</updated>
     
