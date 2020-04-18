@@ -4,6 +4,214 @@
   
     
     <entry>
+      <title>【资源】Clickteam Fusion 2.5+ 部分自制 &amp; 优化特效</title>
+      <link href="/res-CTFeffect/"/>
+      <url>/res-CTFeffect/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Clickteam-Fusion-2-5-部分自制-amp-优化特效"><a href="#Clickteam-Fusion-2-5-部分自制-amp-优化特效" class="headerlink" title="Clickteam Fusion 2.5+ 部分自制 &amp; 优化特效"></a>Clickteam Fusion 2.5+ 部分自制 &amp; 优化特效</h1><p>一开始搞这个是因为 <strong>CTF2.5+</strong> 的 dx11 模式下挺多特效爆炸了，所以我就修复优化了一些常用的。<br>顺便也闲的没事搞了一些自制特效 233，目前的特效有：</p><ul><li>Crop_Rectangle  <em>指定一个矩形区域以裁剪图像</em></li><li>HSV  <em>调整 HSV，效率可能比较低，只支持 dx11</em></li><li>AND  <em>Standard 模式下的一个特效的移植，只支持 dx11</em></li><li>OR  <em>同上</em></li><li>XOR  <em>同上</em></li><li>若干 dx8/9 特效在 dx11 下的修复</li></ul><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>永硕：<a href="http://dasasdhba.ys168.com/" target="_blank" rel="noopener">http://dasasdhba.ys168.com/</a><br></p><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p>论坛帖子：<a href="https://www.marioforever.net/forum.php?mod=viewthread&amp;tid=425" target="_blank" rel="noopener">https://www.marioforever.net/forum.php?mod=viewthread&amp;tid=425</a></p><p>嗯，欢迎评论~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 资源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【游戏】Super Mario Milky Way Wishes</title>
+      <link href="/game-SMMWW/"/>
+      <url>/game-SMMWW/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Super-Mario-Milky-Way-Wishes"><a href="#Super-Mario-Milky-Way-Wishes" class="headerlink" title="Super Mario Milky Way Wishes"></a>Super Mario Milky Way Wishes</h1><p>本人的第一个，也很有可能是最后一个大型马里奥同人作品。<br>制作模板已开源，详见 <a href="https://dasasdhba.github.io/res-UE"><strong>Super Mario Ultra Engine</strong></a></p><p>这一作大概算是 <strong>童年的梦想？</strong>，不过现在已经力不从心了哈哈哈……</p><p>放几张预览图：</p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/dc366945c892e697e32d01b4eb476646.png"  alt=""></p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/ecf9657d5c794731fe079310b99e5cc0.png"  alt=""></p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/5272fe20014197a207733465e04b5ac7.png"  alt=""></p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/8643f5169939d6283055043f433462df.png"  alt=""></p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/f8e05b66a910d372cc88e6317eb83e60.png"  alt=""></p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/b2b989000b9d116ccba181b061607d37.png"  alt=""></p><p>在此还要感谢在制作过程中不断帮助鼓励我的人们！！！<br><strong>@s小s飞s侠s</strong> <strong>@zqh——123</strong> <del>就算是假的 at 我还是要 at（（</del><br>顺便也感谢一下第一位达成 <strong>200%</strong> 的玩家 <strong>@2333ty</strong>（不</p><h2 id="下载地址："><a href="#下载地址：" class="headerlink" title="下载地址："></a>下载地址：</h2><p>蓝奏云：<a href="https://lanzous.com/b02avrc8b" target="_blank" rel="noopener">https://lanzous.com/b02avrc8b</a><br>（这年头应该不会有人不知道分卷压缩）<br>百度云：<a href="https://pan.baidu.com/s/1SKfNAwcPSsdbwZ4ixEWxDg" target="_blank" rel="noopener">https://pan.baidu.com/s/1SKfNAwcPSsdbwZ4ixEWxDg</a> 提取码:mmww</p><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p>发布帖：<a href="https://www.marioforever.net/thread-318-1-1.html" target="_blank" rel="noopener">https://www.marioforever.net/thread-318-1-1.html</a><br>Wiki：<a href="https://zh.wiki.marioforever.net/wiki/Super_Mario_Milky_Way_Wishes" target="_blank" rel="noopener">https://zh.wiki.marioforever.net/wiki/Super_Mario_Milky_Way_Wishes</a><br>宣传视频：<a href="https://www.bilibili.com/video/av85876184/" target="_blank" rel="noopener">https://www.bilibili.com/video/av85876184/</a> （再次感谢 <strong>@s小s飞s侠s</strong>）</p><p>嗯，欢迎评论哦~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【资源】Super Mario Ultra Engine</title>
+      <link href="/res-UE/"/>
+      <url>/res-UE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Super-Mario-Ultra-Engine"><a href="#Super-Mario-Ultra-Engine" class="headerlink" title="Super Mario Ultra Engine"></a>Super Mario Ultra Engine</h1><p>在 <strong>Clickteam Fusion 2.5</strong>  平台上编写的马里奥引擎，功能比较丰富。</p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/4cfc9d727503141f6de6cae1ef5e25fa.jpg"  alt=""></p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/f4a6788417b0dbe2ce23cd04b6fe2bb3.png"  alt=""></p><p>具体可以参见这个视频：<a href="https://www.bilibili.com/video/BV1kb411m7zh" target="_blank" rel="noopener">https://www.bilibili.com/video/BV1kb411m7zh</a></p><p><strong>不再提供功能性更新</strong>，后续会进行 bug 修复。</p><p>最新版 <strong>1.0.200309</strong>：</p><ul><li>修复 <em>无效攻击</em> 和 <em>秒杀攻击</em> 的“！”配置错误</li></ul><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>永硕：<a href="http://dasasdhba.ys168.com/" target="_blank" rel="noopener">http://dasasdhba.ys168.com/</a><br>蓝奏：<a href="https://lanzous.com/b0bd46ji" target="_blank" rel="noopener">https://lanzous.com/b0bd46ji</a></p><h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p>发布帖：<a href="https://www.marioforever.net/thread-383-1-1.html" target="_blank" rel="noopener">https://www.marioforever.net/thread-383-1-1.html</a></p><p>嗯，欢迎评论~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 资源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【资源】Rainbow Engine Android</title>
+      <link href="/res-REAndroid/"/>
+      <url>/res-REAndroid/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Rainbow-Engine-Android"><a href="#Rainbow-Engine-Android" class="headerlink" title="Rainbow Engine Android"></a>Rainbow Engine Android</h1><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/bb0aa3c8cd9b7405213c0670c5bdaeb5.png"  alt=""></p><p>一个基于 <strong>Rainbow Engine</strong> 的 <strong>Android</strong> 编译版， 平台是 <strong>Clickteam Fusion 2.5</strong>。<br>主要是自带的虚拟摇杆太反人类了，故自己搞了个虚拟按键。<br>顺便也做了一套还算比较完整的存档，应该也算是够用，不过 <strong>RE</strong> 版本不太跟得上。</p><p>现只提供 bug 修复更新。</p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>永硕：<a href="http://dasasdhba.ys168.com/" target="_blank" rel="noopener">http://dasasdhba.ys168.com/</a><br>蓝奏：<a href="https://lanzous.com/iy97ba" target="_blank" rel="noopener">https://lanzous.com/iy97ba</a></p><p>嗯，欢迎评论~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 资源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【资源】Mario Forever Neverland Engine</title>
+      <link href="/res-NE/"/>
+      <url>/res-NE/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mario-Forever-Neverland-Engine"><a href="#Mario-Forever-Neverland-Engine" class="headerlink" title="Mario Forever Neverland Engine"></a>Mario Forever Neverland Engine</h1><p>基于 <strong>Rainbow Engine</strong> 的二次开发，加入了大量的马里奥状态，比较稳定。<br>平台是 <strong>Clickteam Fusion 2.5</strong>。</p><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/4fa9dddd7edc815f7b72e0b17b862dd3.png"  alt=""></p><p>然而基于 <strong>RE</strong> 根本无法达到我的需求，故开源。<br>现以不再提供更新。</p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>永硕：<a href="http://dasasdhba.ys168.com/" target="_blank" rel="noopener">http://dasasdhba.ys168.com/</a><br>蓝奏：<a href="https://lanzous.com/b007o2eh" target="_blank" rel="noopener">https://lanzous.com/b007o2eh</a></p><p>不过如果有特别严重的 bug 我可能还是会修（<br>嗯，欢迎评论~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 资源 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【游戏】Mario Forever Another Space</title>
+      <link href="/game-MFAS/"/>
+      <url>/game-MFAS/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mario-Forever-Another-Space"><a href="#Mario-Forever-Another-Space" class="headerlink" title="Mario Forever Another Space"></a>Mario Forever Another Space</h1><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/c0a738d931fceca0eb3a91dd2b9f575b.png"  alt=""></p><p>沉迷 <strong>Not Another Needle Game</strong> 的时候的产物，难度较大，质量也还可以。<br>大概算是第一个我自认为像样的作品，说起来当时也是想在圈子里面掀起一波非主流风格。<br><del>结果就 MFXD 被我带偏了（不</del></p><p>蓝奏云：<a href="https://lanzous.com/i0j9vqf" target="_blank" rel="noopener">https://lanzous.com/i0j9vqf</a></p><p>祝游玩愉快，欢迎评论~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【游戏】Mario Forever World Y</title>
+      <link href="/game-mfWorldY/"/>
+      <url>/game-mfWorldY/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mario-Forever-World-Y"><a href="#Mario-Forever-World-Y" class="headerlink" title="Mario Forever World Y"></a>Mario Forever World Y</h1><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/3484b300fb91396ab9e7d3c981b97507.png"  alt=""></p><p>嗯……本人的第一个 MF 作品，质量就那样吧，除了素材在那个时代有点新颖也没啥特别亮眼的地方（</p><p>蓝奏云：<a href="https://lanzous.com/ibjzhah" target="_blank" rel="noopener">https://lanzous.com/ibjzhah</a></p><p>黑历史还是不要吐槽了，不过还是欢迎评论哦~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>【游戏】Mario Worker 部分作品</title>
+      <link href="/game-marioworker/"/>
+      <url>/game-marioworker/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Mario-Worker-部分作品"><a href="#Mario-Worker-部分作品" class="headerlink" title="Mario Worker 部分作品"></a>Mario Worker 部分作品</h1><p>嗯，这里是我很久以前的一些 <strong>Mario Worker</strong> 作品，都是 4.4 时代的产物，没啥好说的，留作纪念（</p><h2 id="Mario-Forever-Fantasy-Romance"><a href="#Mario-Forever-Fantasy-Romance" class="headerlink" title="Mario Forever Fantasy Romance"></a>Mario Forever Fantasy Romance</h2><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/22519642858c755e3bcecd18d34c835b.png"  alt="Fantasy Romance"></p><p>满满黑历史啊……那时的我在干嘛（</p><h2 id="Kirby-World"><a href="#Kirby-World" class="headerlink" title="Kirby World"></a>Kirby World</h2><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/ab32613b03fcc9f5f886b068c1665748.png"  alt="Kirby World"></p><p>我当年到底在干什么哈哈哈哈哈哈哈哈哈哈哈哈</p><h2 id="Hazy-Maze-Cavern"><a href="#Hazy-Maze-Cavern" class="headerlink" title="Hazy Maze Cavern"></a>Hazy Maze Cavern</h2><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/e4266cd28af0121691a6504015b317f1.png"  alt="Hazy Maze Cavern"></p><p>这关质量其实还行，当年还是个小学生左上角是机翻的就别吐槽了（（</p><h2 id="Mario-Return-to-Neverland"><a href="#Mario-Return-to-Neverland" class="headerlink" title="Mario Return to Neverland"></a>Mario Return to Neverland</h2><p><img src="/" class="lazyload" data-src="http://yanxuan.nosdn.127.net/1b30ac14dbc8e36dc61c3e565eaf9f12.png"  alt="MRTN"></p><p>说起来这个坑还没填完，才做了三世界不过难度已经足够崩坏了（（<br>其实也算是设计风格成熟的标志作品，也是最后一作吧……</p><h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>蓝奏云：<a href="https://lanzous.com/b02b1jurg" target="_blank" rel="noopener">https://lanzous.com/b02b1jurg</a></p><p>嗯，黑历史什么的就不要吐槽了，不过还是欢迎评论~</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 游戏 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 资源 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>dasasdhba 的个人博客上线啦！！！</title>
       <link href="/life-%E4%B8%8A%E7%BA%BF/"/>
       <url>/life-%E4%B8%8A%E7%BA%BF/</url>
