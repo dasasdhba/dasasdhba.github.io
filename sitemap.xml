@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://dasasdhba.github.io/study-biology/</loc>
+    <loc>http://dasasdhba.github.io/study-Chinese/</loc>
     
-    <lastmod>2020-08-05T05:12:51.340Z</lastmod>
+    <lastmod>2020-08-06T11:05:26.126Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/study-English/</loc>
+    
+    <lastmod>2020-08-06T11:02:35.117Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/study-Biology/</loc>
+    
+    <lastmod>2020-08-05T06:12:50.255Z</lastmod>
     
   </url>
   
