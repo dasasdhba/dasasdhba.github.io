@@ -4,120 +4,194 @@
   <url>
     <loc>http://dasasdhba.github.io/res-UEL/</loc>
     
-    <lastmod>2021-07-29T09:55:52.814Z</lastmod>
+    <lastmod>2021-08-07</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/course-UELManual/</loc>
+    
+    <lastmod>2021-08-07</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/game-MRI2C5/</loc>
     
-    <lastmod>2021-07-27T15:28:52.311Z</lastmod>
+    <lastmod>2021-07-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/game-MFE/</loc>
     
-    <lastmod>2021-07-27T15:15:34.301Z</lastmod>
+    <lastmod>2021-07-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/game-marioworker/</loc>
     
-    <lastmod>2021-06-27T16:32:58.636Z</lastmod>
+    <lastmod>2021-06-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/game-MFAS/</loc>
     
-    <lastmod>2021-06-27T16:32:21.587Z</lastmod>
+    <lastmod>2021-06-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/game-mfWorldY/</loc>
     
-    <lastmod>2021-06-27T16:31:59.476Z</lastmod>
+    <lastmod>2021-06-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/game-SMMWW/</loc>
     
-    <lastmod>2021-06-27T16:31:55.324Z</lastmod>
+    <lastmod>2021-06-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/res-NE/</loc>
     
-    <lastmod>2021-06-27T16:31:44.523Z</lastmod>
+    <lastmod>2021-06-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/res-REAndroid/</loc>
     
-    <lastmod>2021-06-27T16:31:29.855Z</lastmod>
+    <lastmod>2021-06-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/res-UE/</loc>
     
-    <lastmod>2021-06-27T16:31:05.649Z</lastmod>
+    <lastmod>2021-06-27</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/link/index.html</loc>
     
-    <lastmod>2020-09-26T15:34:46.482Z</lastmod>
+    <lastmod>2020-09-26</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/course-CTFC1/</loc>
     
-    <lastmod>2020-09-25T11:37:44.398Z</lastmod>
+    <lastmod>2020-09-25</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/about/index.html</loc>
     
-    <lastmod>2020-04-18T09:37:32.080Z</lastmod>
+    <lastmod>2020-04-18</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/categories/index.html</loc>
     
-    <lastmod>2020-04-18T09:37:21.091Z</lastmod>
+    <lastmod>2020-04-18</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/res-CTFeffect/</loc>
     
-    <lastmod>2020-04-18T05:44:44.692Z</lastmod>
+    <lastmod>2020-04-18</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/life-%E4%B8%8A%E7%BA%BF/</loc>
     
-    <lastmod>2020-04-17T15:31:04.909Z</lastmod>
+    <lastmod>2020-04-17</lastmod>
     
   </url>
   
   <url>
     <loc>http://dasasdhba.github.io/tags/index.html</loc>
     
-    <lastmod>2020-04-17T13:40:18.185Z</lastmod>
+    <lastmod>2020-04-17</lastmod>
     
+  </url>
+  
+
+  <url>
+    <loc>http://dasasdhba.github.io/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  
+  <url>
+    <loc>http://dasasdhba.github.io/tags/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/tags/%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/tags/%E8%B5%84%E6%BA%90/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/tags/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+
+  
+  <url>
+    <loc>http://dasasdhba.github.io/categories/%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/categories/%E6%B8%B8%E6%88%8F/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/categories/%E7%94%9F%E6%B4%BB%E7%90%90%E4%BA%8B/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dasasdhba.github.io/categories/%E8%B5%84%E6%BA%90/</loc>
+    <lastmod>2021-08-07</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
   </url>
   
 </urlset>
