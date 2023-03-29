@@ -1,0 +1,113 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「数值分析」浅析快速傅里叶变换 FFT | dasasdhba</title><meta name="description" content="前言 最近学数值分析这门课的时候碰到了 DFT 与 FFT，然而我们学校 PPT 上给出的 FFT 看起来实在是令人费解，教材更是直接摆烂不写了。 于是我想在网上找找教程看看，又发现网上的教程跟我们教材的思路又不完全相同，其看起来似乎是一个更加易懂的改进，所以我想在此记录一下。 解析 我们考虑 \(f\) 在等距点集 \(\left\{x_j=\frac{2\pi j}N|j=0,1,.."><meta name="keywords" content="学习"><meta name="author" content="dasasdhba"><meta name="copyright" content="dasasdhba"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/ESP.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="「数值分析」浅析快速傅里叶变换 FFT"><meta name="twitter:description" content="前言 最近学数值分析这门课的时候碰到了 DFT 与 FFT，然而我们学校 PPT 上给出的 FFT 看起来实在是令人费解，教材更是直接摆烂不写了。 于是我想在网上找找教程看看，又发现网上的教程跟我们教材的思路又不完全相同，其看起来似乎是一个更加易懂的改进，所以我想在此记录一下。 解析 我们考虑 \(f\) 在等距点集 \(\left\{x_j=\frac{2\pi j}N|j=0,1,.."><meta name="twitter:image" content="https://allsignalprocessing.com/wp-content/uploads/2014/06/fast-fourier-transform.png"><meta property="og:type" content="article"><meta property="og:title" content="「数值分析」浅析快速傅里叶变换 FFT"><meta property="og:url" content="http://dasasdhba.github.io/study-FFT/"><meta property="og:site_name" content="dasasdhba"><meta property="og:description" content="前言 最近学数值分析这门课的时候碰到了 DFT 与 FFT，然而我们学校 PPT 上给出的 FFT 看起来实在是令人费解，教材更是直接摆烂不写了。 于是我想在网上找找教程看看，又发现网上的教程跟我们教材的思路又不完全相同，其看起来似乎是一个更加易懂的改进，所以我想在此记录一下。 解析 我们考虑 \(f\) 在等距点集 \(\left\{x_j=\frac{2\pi j}N|j=0,1,.."><meta property="og:image" content="https://allsignalprocessing.com/wp-content/uploads/2014/06/fast-fourier-transform.png"><meta property="article:published_time" content="2023-03-29T11:57:26.000Z"><meta property="article:modified_time" content="2023-03-29T15:48:54.401Z"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://dasasdhba.github.io/study-FFT/"><link rel="next" title="Godot 自学指南" href="http://dasasdhba.github.io/tutorial-Godot/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://dasasdhba.github.io/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: 'false',
+  isFontAwesomeV5: false,
+  isPhotoFigcaption: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isSidebar: true  
+  }</script><noscript><style>
+#page-header {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="dasasdhba" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://s1.ax1x.com/2020/08/08/a547uQ.jpg" onerror="onerror=null;src='undefined'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">16</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">5</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#解析"><span class="toc-number">2.</span> <span class="toc-text">解析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#思路"><span class="toc-number">2.1.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#改进"><span class="toc-number">2.2.</span> <span class="toc-text">改进</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考文献"><span class="toc-number">3.</span> <span class="toc-text">参考文献</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div class="post-bg" id="nav" style="background-image: url(https://allsignalprocessing.com/wp-content/uploads/2014/06/fast-fourier-transform.png)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">dasasdhba</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">「数值分析」浅析快速傅里叶变换 FFT</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2023-03-29 19:57:26"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2023-03-29</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2023-03-29 23:48:54"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2023-03-29</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-comment-o" aria-hidden="true"></i><span>评论数:</span><a href="/study-FFT/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/study-FFT/" itemprop="commentCount"></span></a></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div id="article-container"><h1 id="前言">前言</h1>
+<p>最近学数值分析这门课的时候碰到了 <strong>DFT</strong> 与 <strong>FFT</strong>，然而我们学校 <strong>PPT</strong> 上给出的 <strong>FFT</strong> 看起来实在是令人费解，教材更是直接摆烂不写了。</p>
+<p>于是我想在网上找找教程看看，又发现网上的教程跟我们教材的思路又不完全相同，其看起来似乎是一个更加易懂的改进，所以我想在此记录一下。</p>
+<h1 id="解析">解析</h1>
+<p>我们考虑 <span class="math inline">\(f\)</span> 在等距点集 <span class="math inline">\(\left\{x_j=\frac{2\pi j}N|j=0,1,...,N-1\right\}\)</span> 上用正交函数族 <span class="math inline">\(1,e^{ix},...,e^{i(N-1)x}\)</span> 得到的最佳平方逼近： <span class="math display">\[
+S(x)=\sum_{k=0}^{N-1}c_ke^{ikx}
+\]</span> 其中 <span class="math display">\[
+c_k=\frac1N \sum_{j=0}^{N-1}f(x_j)e^{-ik\frac{2\pi j}N}\;(k=0,1,...,N-1)
+\]</span> 被称为 <strong>DFT</strong>，要想得到所有 <span class="math inline">\(c_k\)</span> 共需要计算 <span class="math inline">\(N^2\)</span> 次乘法和加法，<strong>FFT</strong> 给出了该计算的快速实现。</p>
+<h2 id="思路">思路</h2>
+<p>方便起见，记 <span class="math inline">\(f_j=f(x_j),\:\omega_N=e^{-i\frac{2\pi}N}\)</span>，那么 <span class="math inline">\(c_k=\frac1N \sum_{j=0}^{N-1}f_j\omega_N^{kj}\)</span></p>
+<p>注意到，<span class="math inline">\(\omega_N^{kj}\)</span> 事实上只有 <span class="math inline">\(1,\omega_N,...,\omega_N^{N-1}\)</span> 这 <span class="math inline">\(N\)</span> 个值，这实际上是复平面上单位圆的 <span class="math inline">\(N\)</span> 等分点</p>
+<p>因而不难发现，若 <span class="math inline">\(N\)</span> 为偶数，由对称性就有 <span class="math inline">\(\omega_N^k+\omega_N^{\frac N2+k}=0\)</span></p>
+<p>一个自然的想法是合并公因子，所以我们可以将 <span class="math inline">\(c_k\)</span> 改写为： <span class="math display">\[
+c_k=\frac1N\left(\sum_{j=0}^{\frac N2-1}f_j\omega_N^{kj}+\sum_{j=0}^{\frac N2-1}f_{\frac N2+j}\omega_N^{k(\frac N2+j)}\right)=\frac1N\left(\sum_{j=0}^{\frac N2-1}f_j\omega_N^{kj}+\sum_{j=0}^{\frac N2-1}(-1)^kf_{\frac N2+j}\omega_N^{kj}\right)=\frac1N\sum_{j=0}^{\frac N2-1}(f_j+(-1)^kf_{\frac N2+j})\omega_N^{kj}
+\]</span> 具体考虑 <span class="math inline">\(k\)</span> 为奇数或者偶数的情况，有： <span class="math display">\[
+c_{2k}=\frac1N\sum_{j=0}^{\frac N2-1}(f_j+f_{\frac N2+j})\omega_{\frac N2}^{kj}\\
+c_{2k+1}=\frac1N\sum_{j=0}^{\frac N2-1}(f_j-f_{\frac N2+j})\omega_N^{j}\omega_{\frac N2}^{kj}
+\]</span> 从而如果 <span class="math inline">\(\frac N2\)</span> 仍为偶数，我们就可以对 <span class="math inline">\(c_{2k}\)</span> 与 <span class="math inline">\(c_{2k+1}\)</span> 重复上述过程</p>
+<p>特别地，若 <span class="math inline">\(N=2^p\)</span>，则该过程可以一直重复下去</p>
+<h2 id="改进">改进</h2>
+<p>一个简单的改进是直接考察 <span class="math inline">\(c_k\)</span> 中的奇数项和 <span class="math inline">\(S_k\)</span> 与偶数项和 <span class="math inline">\(T_k\)</span>： <span class="math display">\[
+c_k=\frac1N \sum_{j=0}^{N-1}f_j\omega_N^{kj}=S_k+T_k\\
+S_k=\frac1N \sum_{j=0}^{\frac N2-1}f_{2j+1}\omega_N^k\omega_{\frac N2}^{kj}\\
+T_k=\frac1N \sum_{j=0}^{\frac N2-1}f_{2j}\omega_{\frac N2}^{kj}
+\]</span> 那么由于 <span class="math inline">\(\frac N2\)</span> 仍为偶数，可以对 <span class="math inline">\(S_k\)</span> 与 <span class="math inline">\(T_k\)</span> 反复作相同操作，而这个改进的关键在于： <span class="math display">\[
+c_{k+\frac N2}=\frac1N \sum_{j=0}^{N-1}f_j\omega_N^{(k+\frac N2)j}=\frac1N \sum_{j=0}^{N-1}(-1)^jf_j\omega_N^{kj}=T_k-S_k
+\]</span> 由此我们事实上只需要计算 <span class="math inline">\(c_0,c_1,...,c_{\frac N2-1}\)</span>，对于 <span class="math inline">\(S_k\)</span> 与 <span class="math inline">\(T_k\)</span> 亦然</p>
+<h1 id="参考文献">参考文献</h1>
+<p>[1] 李庆扬, 王能超, 易大义. 数值分析第 5 版 [M]. 清华大学出版社, 2009. P87</p>
+<p>[2] 快速理解 FFT 算法. 2022. <a href="https://zhuanlan.zhihu.com/p/407885496" target="_blank" rel="noopener" class="uri">https://zhuanlan.zhihu.com/p/407885496</a></p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">dasasdhba</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://dasasdhba.github.io/study-FFT/">http://dasasdhba.github.io/study-FFT/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://dasasdhba.github.io" target="_blank">dasasdhba</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post_share"><div class="social-share" data-image="https://allsignalprocessing.com/wp-content/uploads/2014/06/fast-fourier-transform.png" data-sites="wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/tutorial-Godot/"><img class="next_cover lazyload" data-src="https://i.iinfo.cz/images/454/godot-logo-1.png" onerror="onerror=null;src='http://yanxuan.nosdn.127.net/17d506bee5c563ab6285b5b1c2e95599.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Godot 自学指南</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: 'qKzKTqLS4IP0grV2Pq1waGQt-MdYXbMMI',
+  appKey: 'sYVhbspdU7W0iDOAMjPrtQ7c',
+  placeholder: '写个评论吧~',
+  avatar: 'mp',
+  meta: guest_info,
+  pageSize: '10',
+  lang: 'zh-CN',
+  recordIP: true,
+  serverURLs: '',
+  mathjax: false
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By dasasdhba</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script defer id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/search/local-search.js"></script></body></html>
