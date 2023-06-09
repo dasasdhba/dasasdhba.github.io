@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数值分析复习笔记 | dasasdhba</title><meta name="description" content="本篇为应付考试而整理的复习笔记，因而只是整理我个人认为考前需要速通的点，因而不一定全面以及完备。 误差分析 两类基本误差  绝对误差：\(e_{\bar{x}}=x-\bar{x}\) 相对误差：\(r_{\bar{x}}=\frac{e_{\bar{x}}}x\) 由于 \(x\) 往往未知，在 \(r_{\bar{x}}\) 很小的时候，可以用 \(r^*_{\bar{x}}=\f"><meta name="keywords" content="学习"><meta name="author" content="dasasdhba"><meta name="copyright" content="dasasdhba"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/ESP.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="数值分析复习笔记"><meta name="twitter:description" content="本篇为应付考试而整理的复习笔记，因而只是整理我个人认为考前需要速通的点，因而不一定全面以及完备。 误差分析 两类基本误差  绝对误差：\(e_{\bar{x}}=x-\bar{x}\) 相对误差：\(r_{\bar{x}}=\frac{e_{\bar{x}}}x\) 由于 \(x\) 往往未知，在 \(r_{\bar{x}}\) 很小的时候，可以用 \(r^*_{\bar{x}}=\f"><meta name="twitter:image" content="https://s1.ax1x.com/2023/04/24/p9mR80O.jpg"><meta property="og:type" content="article"><meta property="og:title" content="数值分析复习笔记"><meta property="og:url" content="http://dasasdhba.github.io/study-numeric-analysis/"><meta property="og:site_name" content="dasasdhba"><meta property="og:description" content="本篇为应付考试而整理的复习笔记，因而只是整理我个人认为考前需要速通的点，因而不一定全面以及完备。 误差分析 两类基本误差  绝对误差：\(e_{\bar{x}}=x-\bar{x}\) 相对误差：\(r_{\bar{x}}=\frac{e_{\bar{x}}}x\) 由于 \(x\) 往往未知，在 \(r_{\bar{x}}\) 很小的时候，可以用 \(r^*_{\bar{x}}=\f"><meta property="og:image" content="https://s1.ax1x.com/2023/04/24/p9mR80O.jpg"><meta property="article:published_time" content="2023-04-24T06:10:28.000Z"><meta property="article:modified_time" content="2023-04-25T14:43:28.751Z"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://dasasdhba.github.io/study-numeric-analysis/"><link rel="next" title="「数值分析」浅析快速傅里叶变换 FFT" href="http://dasasdhba.github.io/study-FFT/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>数值分析复习笔记 | dasasdhba</title><meta name="description" content="本篇为应付考试而整理的复习笔记，因而只是整理我个人认为考前需要速通的点，因而不一定全面以及完备。 误差分析 两类基本误差  绝对误差：\(e_{\bar{x}}=x-\bar{x}\) 相对误差：\(r_{\bar{x}}=\frac{e_{\bar{x}}}x\) 由于 \(x\) 往往未知，在 \(r_{\bar{x}}\) 很小的时候，可以用 \(r^*_{\bar{x}}=\f"><meta name="keywords" content="学习"><meta name="author" content="dasasdhba"><meta name="copyright" content="dasasdhba"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/ESP.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="数值分析复习笔记"><meta name="twitter:description" content="本篇为应付考试而整理的复习笔记，因而只是整理我个人认为考前需要速通的点，因而不一定全面以及完备。 误差分析 两类基本误差  绝对误差：\(e_{\bar{x}}=x-\bar{x}\) 相对误差：\(r_{\bar{x}}=\frac{e_{\bar{x}}}x\) 由于 \(x\) 往往未知，在 \(r_{\bar{x}}\) 很小的时候，可以用 \(r^*_{\bar{x}}=\f"><meta name="twitter:image" content="https://s1.ax1x.com/2023/04/24/p9mR80O.jpg"><meta property="og:type" content="article"><meta property="og:title" content="数值分析复习笔记"><meta property="og:url" content="http://dasasdhba.github.io/study-numeric-analysis/"><meta property="og:site_name" content="dasasdhba"><meta property="og:description" content="本篇为应付考试而整理的复习笔记，因而只是整理我个人认为考前需要速通的点，因而不一定全面以及完备。 误差分析 两类基本误差  绝对误差：\(e_{\bar{x}}=x-\bar{x}\) 相对误差：\(r_{\bar{x}}=\frac{e_{\bar{x}}}x\) 由于 \(x\) 往往未知，在 \(r_{\bar{x}}\) 很小的时候，可以用 \(r^*_{\bar{x}}=\f"><meta property="og:image" content="https://s1.ax1x.com/2023/04/24/p9mR80O.jpg"><meta property="article:published_time" content="2023-04-24T06:10:28.000Z"><meta property="article:modified_time" content="2023-06-09T07:23:02.712Z"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://dasasdhba.github.io/study-numeric-analysis/"><link rel="next" title="「数值分析」浅析快速傅里叶变换 FFT" href="http://dasasdhba.github.io/study-FFT/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
   root: '/',
   algolia: undefined,
   localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
@@ -38,7 +38,7 @@
   opacity: 1
 }
 </style></noscript><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="dasasdhba" type="application/atom+xml">
-</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://s1.ax1x.com/2020/08/08/a547uQ.jpg" onerror="onerror=null;src='undefined'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">17</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">5</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#误差分析"><span class="toc-number">1.</span> <span class="toc-text">误差分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#两类基本误差"><span class="toc-number">1.1.</span> <span class="toc-text">两类基本误差</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#舍入误差与有效数字"><span class="toc-number">1.2.</span> <span class="toc-text">舍入误差与有效数字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运算中的误差传播"><span class="toc-number">1.3.</span> <span class="toc-text">运算中的误差传播</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机浮点系统"><span class="toc-number">1.4.</span> <span class="toc-text">计算机浮点系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ufl-与-ofl"><span class="toc-number">1.4.1.</span> <span class="toc-text">UFL 与 OFL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#机器精度"><span class="toc-number">1.4.2.</span> <span class="toc-text">机器精度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#机器算术运算"><span class="toc-number">1.4.3.</span> <span class="toc-text">机器算术运算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数值稳定与病态问题"><span class="toc-number">1.5.</span> <span class="toc-text">数值稳定与病态问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插值法"><span class="toc-number">2.</span> <span class="toc-text">插值法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#lagrange-插值"><span class="toc-number">2.1.</span> <span class="toc-text">\(Lagrange\) 插值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#余项"><span class="toc-number">2.1.1.</span> <span class="toc-text">余项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#runge-现象"><span class="toc-number">2.1.2.</span> <span class="toc-text">\(Runge\) 现象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#newton-插值"><span class="toc-number">2.2.</span> <span class="toc-text">\(Newton\) 插值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#均差"><span class="toc-number">2.2.1.</span> <span class="toc-text">均差</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#差商表"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">差商表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#newton-插值多项式"><span class="toc-number">2.2.2.</span> <span class="toc-text">\(Newton\) 插值多项式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有限差"><span class="toc-number">2.2.3.</span> <span class="toc-text">有限差</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#差分表"><span class="toc-number">2.2.3.1.</span> <span class="toc-text">差分表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#newton-前插和后插公式"><span class="toc-number">2.2.4.</span> <span class="toc-text">\(Newton\) 前插和后插公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hermite-插值"><span class="toc-number">2.3.</span> <span class="toc-text">Hermite 插值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分段插值"><span class="toc-number">2.4.</span> <span class="toc-text">分段插值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#分段插值误差界"><span class="toc-number">2.4.1.</span> <span class="toc-text">分段插值误差界</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三次样条插值"><span class="toc-number">2.4.2.</span> <span class="toc-text">三次样条插值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基样条插值"><span class="toc-number">2.4.3.</span> <span class="toc-text">基样条插值</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#函数逼近"><span class="toc-number">3.</span> <span class="toc-text">函数逼近</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#正交函数系"><span class="toc-number">3.1.</span> <span class="toc-text">正交函数系</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#线性无关"><span class="toc-number">3.1.1.</span> <span class="toc-text">线性无关</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#直交多项式"><span class="toc-number">3.2.</span> <span class="toc-text">直交多项式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#chebyshev-多项式"><span class="toc-number">3.2.1.</span> <span class="toc-text">\(Chebyshev\) 多项式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第二类-chebyshev-多项式"><span class="toc-number">3.2.1.1.</span> <span class="toc-text">第二类 \(Chebyshev\) 多项式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#legendre-多项式"><span class="toc-number">3.2.2.</span> <span class="toc-text">\(Legendre\) 多项式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最佳一致逼近"><span class="toc-number">3.3.</span> <span class="toc-text">最佳一致逼近</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最佳平方逼近"><span class="toc-number">3.4.</span> <span class="toc-text">最佳平方逼近</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#离散情形"><span class="toc-number">3.4.1.</span> <span class="toc-text">离散情形</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据拟合"><span class="toc-number">4.</span> <span class="toc-text">数据拟合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#线性拟合"><span class="toc-number">4.1.</span> <span class="toc-text">线性拟合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#过拟合现象"><span class="toc-number">4.1.1.</span> <span class="toc-text">过拟合现象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非线性拟合"><span class="toc-number">4.2.</span> <span class="toc-text">非线性拟合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#线性化求近似解"><span class="toc-number">4.2.1.</span> <span class="toc-text">线性化求近似解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#梯度下降法"><span class="toc-number">4.2.2.</span> <span class="toc-text">梯度下降法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">5.</span> <span class="toc-text">后记</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div class="post-bg" id="nav" style="background-image: url(https://s1.ax1x.com/2023/04/24/p9mR80O.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">dasasdhba</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">数值分析复习笔记</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2023-04-24 14:10:28"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2023-04-24</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2023-04-25 22:43:28"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2023-04-25</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-comment-o" aria-hidden="true"></i><span>评论数:</span><a href="/study-numeric-analysis/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/study-numeric-analysis/" itemprop="commentCount"></span></a></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div id="article-container"><p>本篇为应付考试而整理的复习笔记，因而只是整理我个人认为考前需要速通的点，因而不一定全面以及完备。</p>
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://s1.ax1x.com/2020/08/08/a547uQ.jpg" onerror="onerror=null;src='undefined'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">17</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">5</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">5</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><i class="fa fa-arrow-right on" id="toggle-sidebar" aria-hidden="true">     </i><div id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#误差分析"><span class="toc-number">1.</span> <span class="toc-text">误差分析</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#两类基本误差"><span class="toc-number">1.1.</span> <span class="toc-text">两类基本误差</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#舍入误差与有效数字"><span class="toc-number">1.2.</span> <span class="toc-text">舍入误差与有效数字</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#运算中的误差传播"><span class="toc-number">1.3.</span> <span class="toc-text">运算中的误差传播</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#计算机浮点系统"><span class="toc-number">1.4.</span> <span class="toc-text">计算机浮点系统</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#ufl-与-ofl"><span class="toc-number">1.4.1.</span> <span class="toc-text">UFL 与 OFL</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#机器精度"><span class="toc-number">1.4.2.</span> <span class="toc-text">机器精度</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#机器算术运算"><span class="toc-number">1.4.3.</span> <span class="toc-text">机器算术运算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数值稳定与病态问题"><span class="toc-number">1.5.</span> <span class="toc-text">数值稳定与病态问题</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#插值法"><span class="toc-number">2.</span> <span class="toc-text">插值法</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#lagrange-插值"><span class="toc-number">2.1.</span> <span class="toc-text">\(Lagrange\) 插值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#余项"><span class="toc-number">2.1.1.</span> <span class="toc-text">余项</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#runge-现象"><span class="toc-number">2.1.2.</span> <span class="toc-text">\(Runge\) 现象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#newton-插值"><span class="toc-number">2.2.</span> <span class="toc-text">\(Newton\) 插值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#均差"><span class="toc-number">2.2.1.</span> <span class="toc-text">均差</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#差商表"><span class="toc-number">2.2.1.1.</span> <span class="toc-text">差商表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#newton-插值多项式"><span class="toc-number">2.2.2.</span> <span class="toc-text">\(Newton\) 插值多项式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有限差"><span class="toc-number">2.2.3.</span> <span class="toc-text">有限差</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#差分表"><span class="toc-number">2.2.3.1.</span> <span class="toc-text">差分表</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#newton-前插和后插公式"><span class="toc-number">2.2.4.</span> <span class="toc-text">\(Newton\) 前插和后插公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#hermite-插值"><span class="toc-number">2.3.</span> <span class="toc-text">Hermite 插值</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分段插值"><span class="toc-number">2.4.</span> <span class="toc-text">分段插值</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#分段插值误差界"><span class="toc-number">2.4.1.</span> <span class="toc-text">分段插值误差界</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#三次样条插值"><span class="toc-number">2.4.2.</span> <span class="toc-text">三次样条插值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#基样条插值"><span class="toc-number">2.4.3.</span> <span class="toc-text">基样条插值</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#函数逼近"><span class="toc-number">3.</span> <span class="toc-text">函数逼近</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#正交函数系"><span class="toc-number">3.1.</span> <span class="toc-text">正交函数系</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#线性无关"><span class="toc-number">3.1.1.</span> <span class="toc-text">线性无关</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#直交多项式"><span class="toc-number">3.2.</span> <span class="toc-text">直交多项式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#chebyshev-多项式"><span class="toc-number">3.2.1.</span> <span class="toc-text">\(Chebyshev\) 多项式</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#第二类-chebyshev-多项式"><span class="toc-number">3.2.1.1.</span> <span class="toc-text">第二类 \(Chebyshev\) 多项式</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#legendre-多项式"><span class="toc-number">3.2.2.</span> <span class="toc-text">\(Legendre\) 多项式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最佳一致逼近"><span class="toc-number">3.3.</span> <span class="toc-text">最佳一致逼近</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最佳平方逼近"><span class="toc-number">3.4.</span> <span class="toc-text">最佳平方逼近</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#离散情形"><span class="toc-number">3.4.1.</span> <span class="toc-text">离散情形</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数据拟合"><span class="toc-number">4.</span> <span class="toc-text">数据拟合</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#线性拟合"><span class="toc-number">4.1.</span> <span class="toc-text">线性拟合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#过拟合现象"><span class="toc-number">4.1.1.</span> <span class="toc-text">过拟合现象</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#非线性拟合"><span class="toc-number">4.2.</span> <span class="toc-text">非线性拟合</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#线性化求近似解"><span class="toc-number">4.2.1.</span> <span class="toc-text">线性化求近似解</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#梯度下降法"><span class="toc-number">4.2.2.</span> <span class="toc-text">梯度下降法</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#数值微积分"><span class="toc-number">5.</span> <span class="toc-text">数值微积分</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#数值微分"><span class="toc-number">5.1.</span> <span class="toc-text">数值微分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#差商法"><span class="toc-number">5.1.1.</span> <span class="toc-text">差商法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#插值法-1"><span class="toc-number">5.1.2.</span> <span class="toc-text">插值法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#数值积分"><span class="toc-number">5.2.</span> <span class="toc-text">数值积分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#插值法-2"><span class="toc-number">5.2.1.</span> <span class="toc-text">插值法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#函数的数值积分"><span class="toc-number">5.3.</span> <span class="toc-text">函数的数值积分</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#newton-cotes-求积公式"><span class="toc-number">5.3.1.</span> <span class="toc-text">Newton-Cotes 求积公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#复合求积公式"><span class="toc-number">5.3.2.</span> <span class="toc-text">复合求积公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#区间逐次分半法"><span class="toc-number">5.3.3.</span> <span class="toc-text">区间逐次分半法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#自适应积分法"><span class="toc-number">5.3.4.</span> <span class="toc-text">自适应积分法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#euler-maclaurin-公式"><span class="toc-number">5.3.5.</span> <span class="toc-text">\(Euler-Maclaurin\) 公式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#romberg-积分法"><span class="toc-number">5.3.6.</span> <span class="toc-text">\(Romberg\) 积分法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#gauss-求积公式"><span class="toc-number">5.3.7.</span> <span class="toc-text">\(Gauss\) 求积公式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重积分与广义积分"><span class="toc-number">5.4.</span> <span class="toc-text">重积分与广义积分</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#ode-初值问题数值解"><span class="toc-number">6.</span> <span class="toc-text">ODE 初值问题数值解</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#单步法"><span class="toc-number">6.1.</span> <span class="toc-text">单步法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#euler-法及其改进"><span class="toc-number">6.1.1.</span> <span class="toc-text">\(Euler\) 法及其改进</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#理论误差分析"><span class="toc-number">6.1.2.</span> <span class="toc-text">理论误差分析</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#相容性"><span class="toc-number">6.1.2.1.</span> <span class="toc-text">相容性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#收敛性"><span class="toc-number">6.1.2.2.</span> <span class="toc-text">收敛性</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#稳定性"><span class="toc-number">6.1.2.3.</span> <span class="toc-text">稳定性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#多步法"><span class="toc-number">6.2.</span> <span class="toc-text">多步法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#adams-方法"><span class="toc-number">6.2.1.</span> <span class="toc-text">\(Adams\) 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#hamming-方法"><span class="toc-number">6.2.2.</span> <span class="toc-text">\(Hamming\) 方法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#理论误差分析-1"><span class="toc-number">6.2.3.</span> <span class="toc-text">理论误差分析</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高阶-ode-和-ode-方程组"><span class="toc-number">6.3.</span> <span class="toc-text">高阶 ODE 和 ODE 方程组</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#后记"><span class="toc-number">7.</span> <span class="toc-text">后记</span></a></li></ol></div></div></div><div id="body-wrap"><div id="web_bg" data-type="photo"></div><div class="post-bg" id="nav" style="background-image: url(https://s1.ax1x.com/2023/04/24/p9mR80O.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">dasasdhba</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">数值分析复习笔记</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2023-04-24 14:10:28"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2023-04-24</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2023-06-09 15:23:02"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2023-06-09</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E5%AD%A6%E4%B9%A0/">学习</a></span></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-comment-o" aria-hidden="true"></i><span>评论数:</span><a href="/study-numeric-analysis/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/study-numeric-analysis/" itemprop="commentCount"></span></a></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div id="article-container"><p>本篇为应付考试而整理的复习笔记，因而只是整理我个人认为考前需要速通的点，因而不一定全面以及完备。</p>
 <h1 id="误差分析">误差分析</h1>
 <h2 id="两类基本误差">两类基本误差</h2>
 <ul>
@@ -378,7 +378,7 @@ T_{n+1}&#39;(x)=(n+1)U_n(x)
 <h3 id="legendre-多项式"><span class="math inline">\(Legendre\)</span> 多项式</h3>
 <p>取最简单的权函数 <span class="math inline">\(W(x)=1\)</span>，区间 <span class="math inline">\([a,b]=[-1,1]\)</span>，得 <span class="math inline">\(Legendre\)</span> 多项式，可以表示为： <span class="math display">\[
 p_n(x)=\frac1{2^nn!}\frac{d^n}{dx^n}(x^2-1)^n
-\]</span> 其用处在这门课主要体现在<strong>高斯型求积公式</strong>中，故更多性质此处暂且不谈</p>
+\]</span> 其用处在这门课主要体现在<strong>高斯型求积公式</strong>中，此处暂且不谈</p>
 <h2 id="最佳一致逼近">最佳一致逼近</h2>
 <p>取 <span class="math inline">\(W(x)=1\)</span>，设 <span class="math inline">\(f\in C[a,b]\)</span>，若有一列函数 <span class="math inline">\(\{f_n\}\)</span> 使得： <span class="math display">\[
 \lim_{n\to\infty}\Vert f-f_n\Vert_\infty=0
@@ -522,11 +522,340 @@ F(a_1,...,a_n)=\mathcal{L}(f(x;a_1,...,a_n))
 &amp;\;\;\;\;a=a-\eta\:\nabla F(a)
 \end{aligned}
 \]</span> 其中 <span class="math inline">\(\eta\)</span> 的选取至关重要，太大没法收敛，太小收敛太慢；另一方面，这种算法显然只能得到局部极小值，不能保证其为全局极小值点，因而适当的选取初值也较为重要，可以通过线性化先求解一近似解作为初值</p>
+<h1 id="数值微积分">数值微积分</h1>
+<p>假设需要处理的函数十分复杂，又或者我们只知道一些离散点 <span class="math inline">\(\{x_n,y_n\}\)</span> 的数据，此时需要考察求解微分以及积分的近似值的方法。</p>
+<h2 id="数值微分">数值微分</h2>
+<p>数值微分比较容易，因为只需要近似求解一个极限，下面记需要考察的函数为 <span class="math inline">\(f\)</span></p>
+<h3 id="差商法">差商法</h3>
+<p>据定义，可直接取 <span class="math inline">\(\frac{f(x+h)-f(x)}h\)</span> 作为近似值，即向前差商法；同理还有向后差商法和中心差商法。</p>
+<p>以向前差商法为例考察误差，据 <span class="math inline">\(Taylor\)</span> 展开，有： <span class="math display">\[
+f(x+h)=f(x)+hf&#39;(x)+\frac{h^2}{2!}f&#39;&#39;(\xi)
+\]</span> 由此不难看出误差为 <span class="math inline">\(\Omicron(h)\)</span></p>
+<h3 id="插值法-1">插值法</h3>
+<p>取插值函数 <span class="math inline">\(L(x)\simeq f(x)\)</span>，并以插值函数的导数作为近似的方法<br>之前已讨论过插值函数的误差，从而不难估计此法的误差</p>
+<h2 id="数值积分">数值积分</h2>
+<p>假设我们只知道离散点 <span class="math inline">\(\{x_n,f(x_n)\}\)</span> 的数据，我们尝试考察 <span class="math inline">\(f\)</span> 在 <span class="math inline">\([a,b]\)</span> 上关于权函数 <span class="math inline">\(W(x)\)</span> 的积分： <span class="math display">\[
+I(f)=\int_a^bf(x)W(x)dx
+\]</span> 称基于这些数据给出的公式： <span class="math display">\[
+I_n(f)=\sum_{i=0}^na_if(x_i)
+\]</span> 为<strong>数值积分公式</strong>，其中 <span class="math inline">\(a_i\)</span> 为待定系数。为衡量公式的精确度，称 <span class="math inline">\(I_n(f)\)</span> 有 <strong>k 阶代数精度</strong>，若： <span class="math display">\[
+I_n(x^i)=I(x_i),i=0,1,...,k,\:I_n(x^{k+1})\neq I(x^{k+1})
+\]</span></p>
+<h3 id="插值法-2">插值法</h3>
+<p>与数值微分不同，若想直接使用积分定义作近似，作 <span class="math inline">\(Riemann\)</span> 和难以估计误差，而以 <span class="math inline">\(Lebesgue\)</span> 积分的观点来考察简单函数的逼近则更加困难，因而数值积分基本上只有插值法。以 <span class="math inline">\(Lagrange\)</span> 插值为例： <span class="math display">\[
+I_n(f)=\int_a^bL_n(x)W(x)dx=\sum_{i=0}^n\left(\int_a^bl_i(x)W(x)dx\right)f(x_i)
+\]</span> 据 <span class="math inline">\(Lagrange\)</span> 插值的性质，不难看出此法的代数精度至少为 <span class="math inline">\(n\)</span>，误差由插值函数的误差作积分给出</p>
+<h2 id="函数的数值积分">函数的数值积分</h2>
+<p>与之前讨论的仅知道离散点数据的情形不同，以下假设我们需要考察的被积函数 <span class="math inline">\(f\)</span> 为已知函数，积分区间为 <span class="math inline">\([a,b]\)</span><br>尽管仍然只能采取插值法，然而我们可以自由地选取插值基点，由此可以深入研究各种方法</p>
+<h3 id="newton-cotes-求积公式">Newton-Cotes 求积公式</h3>
+<p>我们考察 <span class="math inline">\(W(x)=1\)</span>，插值基点为 <span class="math inline">\(n+1\)</span> 个等距基点（步长 <span class="math inline">\(h=\frac{b-a}n\)</span>）的情形，此时有： <span class="math display">\[
+a_i=\int_a^bl_i(x)=\frac {(-1)^{n+1-i}\;h}{(i-1)!(n+1-i)!} \int_0^n\prod_{j=0,j\neq i-1}^n(t-j)dt
+\]</span> 若 <span class="math inline">\(n\)</span> 为偶数，且 <span class="math inline">\(f(x)\)</span> 在 <span class="math inline">\([a,b]\)</span> 上有 <span class="math inline">\(n+2\)</span> 阶连续导数，那么误差： <span class="math display">\[
+E_n(f)=\frac{h^{n+3}f^{(n+2)}(\eta)}{(n+2)!}\int_0^nt\prod_{j=0}^n(t-j)dt
+\]</span> 若 <span class="math inline">\(n\)</span> 为奇数，且 <span class="math inline">\(f(x)\)</span> 在 <span class="math inline">\([a,b]\)</span> 上有 <span class="math inline">\(n+1\)</span> 阶连续导数，那么误差： <span class="math display">\[
+E_n(f)=\frac{h^{n+2}f^{(n+1)}(\eta)}{(n+1)!}\int_0^nt\prod_{j=0}^n(t-j)dt
+\]</span> 还需要考虑舍入误差可能带来的数值不稳定性，有估计： <span class="math inline">\(|I_n(f)-I_n^*(f)|\leq\varepsilon\sum_{i=0}^n|a_i|\)</span>，其中 <span class="math inline">\(\varepsilon\)</span> 为最大的舍入误差<br>取 <span class="math inline">\(f(x)=1\)</span>，此时若 <span class="math inline">\(n\geq8\)</span>，那么存在 <span class="math inline">\(a_i&lt;0\)</span>，这会使得数值不稳定</p>
+<p>通常我们只采用 <span class="math inline">\(n=1\)</span> 或 <span class="math inline">\(n=2\)</span> 的情形（原因见下节），这分别对应<strong>梯形公式</strong>与 <strong><span class="math inline">\(Simpson\)</span> 公式</strong></p>
+<ul>
+<li><p>梯形公式：<span class="math inline">\(I_1(f)=\frac{b-a}2(f(a)+f(b))\)</span></p>
+<p>直观上，这是以梯形面积作为近似，因而叫梯形公式</p></li>
+<li><p><span class="math inline">\(Simpson\)</span> 公式：<span class="math inline">\(I_2(f)=\frac{b-a}6\left(f(a)+4f(\frac{a+b}2)+f(b)\right)\)</span></p>
+<p>直观上，这是以两端以及中点所作抛物线的面积作为近似，因而也叫抛物线公式</p></li>
+</ul>
+<h3 id="复合求积公式">复合求积公式</h3>
+<p>前已述不能考虑通过提高 <span class="math inline">\(Newton-Cotes\)</span> 求积公式的阶数来减少误差，而另一方面，积分具有区间可加性，这启发我们将 <span class="math inline">\([a,b]\)</span> 分成若干小段，并对每一段分别使用梯形公式或 <span class="math inline">\(Simpson\)</span> 公式再求和，这就是复合求积公式。</p>
+<p>下面考虑将 <span class="math inline">\([a,b]\)</span> 分为 <span class="math inline">\(n\)</span> 段，进而步长为 <span class="math inline">\(h=\frac{b-a}n\)</span>，为了衡量复合求积公式的精确度，称公式 <span class="math inline">\(p\)</span> 阶收敛，若： <span class="math display">\[
+\lim_{h\to0}\frac{I(f)-I_n(f)}{h^p}=C&lt;\infty,\:C\neq0
+\]</span> 下面分别考虑使用梯形公式和 <span class="math inline">\(Simpson\)</span> 公式作复合求积：</p>
+<ul>
+<li><p>复合梯形公式：<span class="math inline">\(T_n(f)=\frac h2(f(a)+f(b)+2\sum_{i=1}^{n-1}f(a+ih))\)</span></p>
+<p>误差：<span class="math inline">\(E_n(f)=-\frac{h^2(b-a)}{12}f&#39;&#39;(\xi)\)</span>，因而是 <span class="math inline">\(2\)</span> 阶收敛的</p></li>
+<li><p>复合 <span class="math inline">\(Simpson\)</span> 公式（为统一 <span class="math inline">\(h\)</span> 的值，假定 <span class="math inline">\(n\)</span> 为偶数，将 <span class="math inline">\([a,b]\)</span> 分为 <span class="math inline">\(m=\frac n2\)</span> 段）： <span class="math display">\[
+S_n(f)=\frac h3\left(f(a)+f(b)+4\sum_{i=1}^mf(a+(2i-1)h)+2\sum_{i=1}^{m-1}f(a+2ih)\right)
+\]</span> 误差：<span class="math inline">\(E_m(f)=-\frac{h^4(b-a)}{180}f^{(4)}(\xi)\)</span>，因而是 <span class="math inline">\(4\)</span> 阶收敛的</p></li>
+</ul>
+<p>可见，使用复合求积公式，只要通过控制 <span class="math inline">\(h\)</span>，就可以有效地控制误差，因而我们并不需要使用高阶的 <span class="math inline">\(Newton-Cotes\)</span> 求积公式<br></p>
+<h3 id="区间逐次分半法">区间逐次分半法</h3>
+<p>书接上回，使用复合求积公式时，若想控制误差界为给定的 <span class="math inline">\(\varepsilon\)</span>，由其误差估计式，往往需要考察 <span class="math inline">\(f\)</span> 的高阶导数，这会带来麻烦。</p>
+<p>为此，常使用一种被称为<strong>区间逐次分半</strong>的办法——不断将区间二分，直到达到精度要求</p>
+<p>由于我们不希望直接考察误差估计式，常常采用以下办法近似（以复合梯形公式为例）：<br>我们知道： <span class="math display">\[
+E_n(f)=I(f)-T_n(f)=-\frac{h^2(b-a)^3}{12n^2}f&#39;&#39;(\xi_1)\\
+E_{2n}(f)=I(f)-T_{2n}(f)=-\frac{h^2(b-a)^3}{12\times4n^2}f&#39;&#39;(\xi_2)
+\]</span> 如果我们认为：<span class="math inline">\(f&#39;&#39;(\xi_1)\simeq f&#39;&#39;(\xi_2)\)</span>，那么 <span class="math inline">\(E_n(f)\simeq 4E_{2n}(f)\)</span>，由此可以推出： <span class="math display">\[
+E_{2n}(f)\simeq \frac13(T_{2n}(f)-T_n(f))
+\]</span> 这样，我们就回避了直接考察 <span class="math inline">\(f&#39;&#39;\)</span></p>
+<p>另一方面，若记 <span class="math inline">\(n=2^{m-1}\)</span> ，即将 <span class="math inline">\([a,b]\)</span> 作 <span class="math inline">\(2^{m-1}\)</span> 等分，记由此得到的梯形值为 <span class="math inline">\(T_{m,1}\)</span>（下标与 <span class="math inline">\(T_n\)</span> 作区分，无其他含义），那么： <span class="math display">\[
+T_{m,1}=\frac12\left(T_{m-1,1}+h_{m-1}\sum_{k=1}^{2^{m-2}}f(a+(k-\frac12)h_{m-1})\right)\\
+h_m=\frac{b-a}{2^{m-1}}
+\]</span> 即每一次半分时存在递推关系，降低了计算量；事实上，后面会介绍 <span class="math inline">\(Romberg\)</span> 积分法，想法与此十分相似</p>
+<h3 id="自适应积分法">自适应积分法</h3>
+<p>在区间逐次分半法中，每次我们都将区间的等分数量翻倍，尽管有递推式，但这样做仍然会导致速度较慢。<br>然而事实上，我们可以将需要控制的误差界 <span class="math inline">\(\varepsilon\)</span> 在等分的 <span class="math inline">\(n\)</span> 个区间上分别考虑，<br>只要每个区间上的误差都不超过 <span class="math inline">\(\frac\varepsilon n\)</span>，那么也能达到同样的目的</p>
+<p>这样，我们只需要对那些误差超过 <span class="math inline">\(\frac\varepsilon n\)</span> 的区间应用逐次分半法，这就是<strong>自适应积分法</strong>。<br>不难看出，这种办法很适合递归实现：</p>
+<figure class="highlight matlab"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">y</span> = <span class="title">self_adaptive_integral</span><span class="params">(f,a,b,eps)</span></span></span><br><span class="line">	<span class="keyword">if</span> numeric_integral_err(f,a,b) &lt; <span class="built_in">eps</span></span><br><span class="line">		y = numeric_integral(f,a,b);</span><br><span class="line">	<span class="keyword">else</span></span><br><span class="line">		c = (a+b)/<span class="number">2</span>;</span><br><span class="line">		y = self_adaptive_integral(f,a,c,<span class="built_in">eps</span>/<span class="number">2</span>) + self_adaptive_integral(f,c,b,<span class="built_in">eps</span>/<span class="number">2</span>);</span><br><span class="line">	<span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>其中 <code>numeric_integral()</code> 是某个数值积分公式，<code>numeric_integral_err()</code> 往往类似于区间逐次分半法中的误差估计方法</p>
+<p>需要指出的是，由于分半的过程中，各个区间需要处理的误差界也在减半，因而此法容易陷入无限递归，应当加上递归层数的限制</p>
+<h3 id="euler-maclaurin-公式"><span class="math inline">\(Euler-Maclaurin\)</span> 公式</h3>
+<p>后面会稍微用到，但用得不多，故只给出相关结果，证明略</p>
+<p>记 <span class="math inline">\(B_n\)</span> 为 <span class="math inline">\(Bernoulli\)</span> 数，这是由：<span class="math inline">\(\frac{x}{e^x-1}=\sum_{n=0}^\infty \frac{B_n}{n!}x^n\)</span> 给出的，显式公式为： <span class="math display">\[
+B_n=\sum_{k=0}^n\frac1{k+1}\sum_{r=0}^kC_k^r(-1)^rr^n
+\]</span> 设 <span class="math inline">\(a,b\in\mathbb{N},\:f\in C^\infty[a,b]\)</span>，那么有 <span class="math inline">\(Euler-Maclaurin\)</span> 公式： <span class="math display">\[
+\sum_{n=a}^bf(n)-\int_a^bf(x)dx=\frac12(f(a)+f(b))+\sum_{n=1}^\infty \frac{B_{2n}}{2n!}(f^{(2n-1)}(b)-f^{(2n-1)}(a))
+\]</span> （简单来说就是利用 <span class="math inline">\(Bernoulli\)</span> 多项式的性质反复分部积分得到的）</p>
+<p>一般地，若 <span class="math inline">\(f\in C^k[a,b]\)</span>，那么同样有： <span class="math display">\[
+\sum_{n=a}^bf(n)-\int_a^bf(x)dx=\frac12(f(a)+f(b))+\sum_{n=2}^{k-1} \frac{B_{n}}{n!}(f^{(n-1)}(b)-f^{(n-1)}(a))+R_k(f)
+\]</span> 为了描述余项，需要引入 <span class="math inline">\(Bernoulli\)</span> 多项式，类似地，这由：<span class="math inline">\(\frac{te^{tx}}{e^t-1}=\sum_{n=0}^\infty B_n(x)\frac{t^n}{n!}\)</span> 给出，有显式公式： <span class="math display">\[
+B_n(x)=(B+x)^n
+\]</span> 其中 <span class="math inline">\(B^k=B_k\)</span> 为 <span class="math inline">\(Bernoulli\)</span> 数（只是个方便的记号，<span class="math inline">\(B\)</span> 并不是一个数）</p>
+<p>于是，记 <span class="math inline">\(\{x\}=x-[x]\)</span> 为 <span class="math inline">\(x\)</span> 的小数部分，那么余项就可以写为： <span class="math display">\[
+R_k(f)=(-1)^{k-1}\int_a^b\frac{B_k(\{x\})}{k!}f^{(k)}(x)dx
+\]</span> 对于 <span class="math inline">\(a,b\in\mathbb{R}\)</span> 的情形，可以固定 <span class="math inline">\(n\in\mathbb{N}\)</span>，由 <span class="math inline">\(x\to \frac{b-a}nx+a\)</span> 将 <span class="math inline">\([0,n]\to[a,b]\)</span>，再使用上述公式</p>
+<p>如果记 <span class="math inline">\(h=\frac{b-a}n\)</span>，整理可以得到： <span class="math display">\[
+\sum_{i=0}^nhf(a+ih)-\int_a^bf(x)dx=\frac h2(f(a)+f(b))+\sum_{m=2}^{k-1} \frac{B_{m}}{m!}h^{m}(f^{(m-1)}(b)-f^{(m-1)}(a))+R_k(f)\\
+R_k(f)=(-1)^{k-1}h^k\int_a^b\frac{B_k(\{\frac{x-a}h\})}{k!}f^{(k)}(x)dx
+\]</span></p>
+<p>注意， <span class="math inline">\(\sum_{i=0}^nhf(a+ih)-\frac h2(f(a)+f(b))\)</span> 恰为复合梯形公式！<br>故 <span class="math inline">\(Euler-Maclaurin\)</span> 公式事实上给出了复合梯形公式的一个极为精确的误差估计</p>
+<h3 id="romberg-积分法"><span class="math inline">\(Romberg\)</span> 积分法</h3>
+<p>沿用区间逐次分半法的相关记号，将 <span class="math inline">\([a,b]\)</span> 作 <span class="math inline">\(2^{m-1}\)</span> 等分，记由此得到的梯形值为 <span class="math inline">\(T_{m,1}\)</span></p>
+<p><span class="math inline">\(Romberg\)</span> 积分法实质上是利用 <span class="math inline">\(Euler-Maclaurin\)</span> 公式对此做了改进，从而大大加快了收敛速度<br>事实上，据 <span class="math inline">\(Euler-Maclaurin\)</span> 公式，有： <span class="math display">\[
+I(f)-T_{m,1}=a_2h^2+a_4h^4+\Omicron(h^6)
+\]</span> 其中 <span class="math inline">\(a_2,a_4\)</span> 只与 <span class="math inline">\(f\)</span> 在 <span class="math inline">\(a,b\)</span> 处的相关导数值有关，若进一步考察 <span class="math inline">\(T_{m-1,1}\)</span>，有： <span class="math display">\[
+I(f)-T_{m-1,1}=2^2a_2h^2+2^4a_4h^4+\Omicron(h^6)
+\]</span> 由此，我们容易消去误差中的 <span class="math inline">\(h^2\)</span> 项，从而直接将误差缩小至 <span class="math inline">\(\Omicron(h^4)\)</span>！<br>我们记： <span class="math display">\[
+T_{m,2}=\frac{4T_{m,1}-T_{m-1,1}}{3}
+\]</span> （不难验证，这恰为复合 <span class="math inline">\(Simpson\)</span> 公式）</p>
+<p>仿此，可以继续考虑： <span class="math display">\[
+I(f)-T_{m,2}=b_4h^4+b_6h^6+\Omicron(h^8)\\
+I(f)-T_{m-1,2}=2^4b_4h^4+2^6b_6h^6+\Omicron(h^8)\\
+\Rightarrow T_{m,3}=\frac{16T_{m,2}-T_{m-1,2}}{15}
+\]</span> 一般地，有： <span class="math display">\[
+T_{m,j}=\frac{4^{j-1}T_{m,j-1}-T_{m-1,j-1}}{4^{j-1}-1}
+\]</span> 再结合区间逐次分半法中提到的递推式： <span class="math display">\[
+T_{m,1}=\frac12\left(T_{m-1,1}+h_{m-1}\sum_{k=1}^{2^{m-2}}f(a+(k-\frac12)h_{m-1})\right)\\
+T_{1,1}=\frac{h_1}2(f(a)+f(b)),\;h_m=\frac{b-a}{2^{m-1}}
+\]</span> 这就给出了 <span class="math inline">\(Romberg\)</span> 积分法，计算顺序呈三角式，也就是： <span class="math display">\[
+\begin{aligned}
+&amp;T_{1,1}\\
+&amp;T_{2,1} &amp;T_{2,2}\\
+&amp;T_{3,1} &amp;T_{3,2} &amp;&amp;T_{3,3}\\
+&amp;...
+\end{aligned}
+\]</span></p>
+<h3 id="gauss-求积公式"><span class="math inline">\(Gauss\)</span> 求积公式</h3>
+<p>到目前为止，我们的讨论大都基于 <span class="math inline">\(Newton-Cotes\)</span> 求积公式——一个选取等距基点的方法</p>
+<p>一个自然的问题是，若选取一些特殊的基点作插值，是否可以达到更好的效果？这就是 <span class="math inline">\(Gauss\)</span> 求积公式要讨论的问题</p>
+<p>之前已经讨论过，<span class="math inline">\(n+1\)</span> 个插值基点 <span class="math inline">\(a\leq x_0&lt;x_1&lt;...&lt;x_n\leq b\)</span> 给出的求积公式： <span class="math display">\[
+I_n(f)=\int_a^bL_n(x)W(x)dx=\sum_{i=0}^n\left(\int_a^bl_i(x)W(x)dx\right)f(x_i)
+\]</span> 的代数精度至少为 <span class="math inline">\(n\)</span>，如果记 <span class="math inline">\(\omega_{n+1}(x)=\prod_{i=0}^n(x-x_i)\)</span>，则上式又可以写为： <span class="math display">\[
+I_n(f)=\sum_{i=0}^n\left(\int_a^b\frac{\omega_{n+1}(x)}{(x-x_i)\omega&#39;_{n+1}(x)}W(x_i)dx\right)f(x_i)
+\]</span> 可以证明，上述求积公式的代数精度至多是 <span class="math inline">\(2n+1\)</span>，且达到 <span class="math inline">\(2n+1\)</span> 的充分必要条件为：</p>
+<p><span class="math inline">\(\omega_{n+1}(x)\)</span> 与不高于 <span class="math inline">\(n\)</span> 次的任何多项式都关于区间 <span class="math inline">\([a,b]\)</span> 上的权函数 <span class="math inline">\(W(x)\)</span> 直交</p>
+<p>事实上，如果 <span class="math inline">\(p(x)\)</span> 为一个不高于 <span class="math inline">\(2n+1\)</span> 次的多项式，由带余除法： <span class="math display">\[
+p(x)=q(x)\omega_{n+1}(x)+r(x)
+\]</span> 再结合直交的条件就不难看出结论成立</p>
+<p>一般地，我们称选取了 <span class="math inline">\(n+1\)</span> 个插值基点的求积公式为 <span class="math inline">\(Gauss\)</span> 型求积公式，若其代数精度为 <span class="math inline">\(2n+1\)</span></p>
+<p>下面我们简单考虑其误差，因为代数精度为 <span class="math inline">\(2n+1\)</span>，可选 <span class="math inline">\(Hermite\)</span> 插值逼近 <span class="math inline">\(f\)</span> 来作误差估计，由此可以证明离散误差为： <span class="math display">\[
+E_n(f)=Cf^{(2n+2)}(\xi)\\
+C=\frac{d^2}{(2n+2)!}\int_a^bp^2_{n+1}(x)dx
+\]</span> 其中，<span class="math inline">\(p_{n+1}(x)\)</span> 为 <span class="math inline">\([a,b]\)</span> 上关于权函数 <span class="math inline">\(W(x)\)</span> 的 <span class="math inline">\(n+1\)</span> 次直交多项式，<span class="math inline">\(d\)</span> 为 <span class="math inline">\(p_{n+1}(x)\)</span> 首项系数的倒数</p>
+<p>下面我们讨论几个特殊情形：</p>
+<ul>
+<li><p><span class="math inline">\([a,b]=[-1,1],\;W(x)=1\)</span>，我们知道此时直交多项式为 <span class="math inline">\(Legendre\)</span> 多项式，取 <span class="math inline">\(n=1\)</span>，有 <span class="math inline">\(P_2(x)=\frac12(3x^2-1)\)</span></p>
+<p>因而只要取 <span class="math inline">\(P_2(x)\)</span> 的两个根 <span class="math inline">\(x=\pm\frac1{\sqrt{3}}\)</span> 为插值基点，就得到代数精度为 <span class="math inline">\(3\)</span> 的插值公式 <span class="math display">\[
+\int_{-1}^1f(x)dx\simeq f(-\frac1{\sqrt{3}})+f(\frac1{\sqrt{3}})
+\]</span></p>
+<p>称为 <span class="math inline">\(Gauss-Legendre\)</span> 两点公式，离散误差 <span class="math inline">\(E_1(f)=\frac1{135}f^{(4)}(\xi)\)</span></p></li>
+<li><p><span class="math inline">\([a,b]=[-1,1],\;W(x)=\frac1{\sqrt{1-x^2}}\)</span>，我们知道此时直交多项式为 <span class="math inline">\(Chebyshev\)</span> 多项式 <span class="math inline">\(T_{n+1}(x)=cos((n+1)arccos\:x)\)</span> 因而只要取插值基点为 <span class="math inline">\(x_i=cos\left(\frac{2i-1}{2(n+1)}\pi\right),\;i=1,2,...,n+1\)</span>，就得到 <span class="math inline">\(Gauss-Chebyshev\)</span> 求积公式</p>
+<p>利用 <span class="math inline">\(Chebyshev\)</span> 多项式的相关性质，化简后的最终结果为： <span class="math display">\[
+\int_{-1}^1f(x)\frac{dx}{\sqrt{1-x^2}}\simeq\frac{\pi}{n+1}\sum_{k=1}^{n+1}f(x_i)
+\]</span></p></li>
+</ul>
+<p>对于一般的情形，我们可以仿照复合求积公式的想法，首先将 <span class="math inline">\([a,b]\)</span> 等分为若干小区间，然后在每个小区间上通过积分变换将其变换为 <span class="math inline">\([-1,1]\)</span> 上的积分，应用上述公式即可</p>
+<h2 id="重积分与广义积分">重积分与广义积分</h2>
+<p>重积分只要处理为累次积分，就可以导出类似的积分公式（当然，概率论上有一个著名的重积分计算方法，不过此处不作介绍）</p>
+<p>广义积分通常有两种办法处理，一是使用 <span class="math inline">\(Gauss\)</span> 型求积公式，只需要寻找相关的直交多项式；二是截断法，我们知道广义积分收敛的必要条件是在奇点附近的积分趋于 <span class="math inline">\(0\)</span>，从求解近似解的角度来讲，直接截去即可</p>
+<h1 id="ode-初值问题数值解">ODE 初值问题数值解</h1>
+<p>给定一个存在唯一解的 ODE 初值问题：</p>
+<p><span class="math display">\[
+\left\{\begin{aligned}
+&amp;y&#39;=f(t,y),\;a\leq t \leq b\\
+&amp;y(a)=\eta
+\end{aligned}\right.
+\]</span></p>
+<p>称在一系列离散点 <span class="math inline">\(t_0,t_1,...,,t_n\)</span> 处的近似值 <span class="math inline">\(y_0,y_1,...,y_n\)</span> 为该问题的数值解（称为离散变量法）</p>
+<p>通常采用递推的方法，假定我们已知 <span class="math inline">\(y_0,y_1,...,y_{k-1}\)</span>，我们设计算法：<span class="math inline">\(y_k\simeq \varphi(y_0,y_1,...,y_k)\)</span><br>注意，算法两边可能同时出现 <span class="math inline">\(y_k\)</span>，这种情况我们称方法是隐式的（即需要解方程），否则是显式的</p>
+<p>通常，我们有三种思路：</p>
+<ul>
+<li><p>差商代替倒数，即：<span class="math inline">\(y&#39;(t_k)\simeq \frac{y(t_{k+1})-y(t_k)}{h_k},\:h_k=t_{k+1}-t_k\)</span>，于是： <span class="math display">\[
+y(t_{k+1})\simeq y(t_k)+h_kf(t_k,y(t_k))
+\]</span> 这被称为 <span class="math inline">\(Euler\)</span> 法</p></li>
+<li><p><span class="math inline">\(Taylor\)</span> 级数法：取等距离散点，步长 <span class="math inline">\(h=t_k-t_{k-1}\)</span>，视 <span class="math inline">\(y(t+h)\)</span> 为关于 <span class="math inline">\(h\)</span> 的函数，考察 <span class="math inline">\(h=0\)</span> 处的 <span class="math inline">\(Taylor\)</span> 展开： <span class="math display">\[
+\begin{aligned}
+&amp;y(t+h)=y(t)+hy&#39;(t)+\frac12h^2y&#39;&#39;(t)+\frac1{3!}h^3y&#39;&#39;&#39;(t)+...+\frac1{p!}h^py^{(p)}(t)+\frac1{(p+1)!}h^{p+1}y^{(p+1)}(\xi)\\
+&amp;=y(t)+hf(t,y)+\frac12h^2\frac d{dt}f(t,y)+\frac1{3!}h^3\frac {d^2}{dt^2}f(t,y)+...+\frac1{(p+1)!}h^{p+1}\frac{d^{p}}{dt^{p}}f(\xi,y(\xi))
+\end{aligned}
+\]</span> 截去余项就得到递推公式，不难看出 <span class="math inline">\(p=1\)</span> 时这就是 <span class="math inline">\(Euler\)</span> 法</p></li>
+<li><p>数值积分法：<span class="math inline">\(y(t_{k+1})-y(t_k)=\int_{t_k}^{t_{k+1}}f(t,y)dt\)</span>，将右边替换为数值积分公式即可</p></li>
+</ul>
+<p>为了研究误差，可以假定 <span class="math inline">\(y_0,y_1,...,y_{k-1}\)</span> 是精确的，称这种情况下算法 <span class="math inline">\(\varphi(y_0,y_1,...,y_k)\)</span> 的误差为<strong>局部离散误差</strong><br>记 <span class="math inline">\(h_k=t_{k+1}-t_{k}\)</span>，我们称算法为 <span class="math inline">\(p\)</span> 阶方法，若 <span class="math inline">\(y_{k+1}\)</span> 的局部离散误差为 <span class="math inline">\(\Omicron^*(h_k^{p+1})\)</span></p>
+<p>从整体上来看，我们称 <span class="math inline">\(y_n\)</span> 与其精确解之间的误差为<strong>整体离散误差</strong></p>
+<h2 id="单步法">单步法</h2>
+<p>单步法是说递推算法形如：<span class="math inline">\(y_k\simeq \varphi(y_{k-1},y_k)\)</span>，即每次递推只用到上一步的数据<br></p>
+<p>对于等距、显式的情形，我们通常写为： <span class="math display">\[
+y_{k+1}\simeq y_k+h\Phi(t_k,y_k,h)
+\]</span> 我们首先讨论一些具体的方法，然后再从理论上系统研究误差问题</p>
+<h3 id="euler-法及其改进"><span class="math inline">\(Euler\)</span> 法及其改进</h3>
+<p>前已述 <span class="math inline">\(Euler\)</span> 法的原理，在等距情形，也就是 <span class="math inline">\(\Phi(t_k,y_k,h)=f(t_k,y_k)\)</span><br>因为 <span class="math inline">\(Euler\)</span> 法可以由 <span class="math inline">\(Taylor\)</span> 级数法取 <span class="math inline">\(p=1\)</span> 得到，这就不难看出其局部离散误差为 <span class="math inline">\(O^*(h^2)\)</span>，因而是一阶方法</p>
+<p>此法精度不高，故需改进，如果我们采用数值积分法中的梯形公式，可以得到一隐式方法： <span class="math display">\[
+y_{k+1}\simeq y_k+\frac h2(f(t_k,y_k)+f(t_{k+1},y_{k+1}))
+\]</span> 据梯形公式的误差估计，我们知道此法为二阶方法，然而此法作为隐式方法，一般需要通过迭代求近似解<br>迭代求解需要一个初值，我们可以使用 <span class="math inline">\(Euler\)</span> 法提供，具体来说，也就是： <span class="math display">\[
+\begin{aligned}
+&amp;y_{k+1,0}\simeq y_k+hf(t_k,y_k)\\
+&amp;y_{k+1,m}\simeq y_k+\frac h2(f(t_k,y_k)+f(t_{k+1},y_{k+1,m-1}))
+\end{aligned}
+\]</span> 这个过程也被称作 <strong>PECE</strong>，即 <strong>Predict-Evaluate-Correct-Evaluate</strong>，迭代 <span class="math inline">\(k\)</span> 次的模式记为 <span class="math inline">\(P(EC)^kE\)</span><br>简单来说，就是先用显式方法作<strong>预测</strong>，再将该预测值用于隐式方法作<strong>校正</strong>（并反复迭代）的过程。</p>
+<p>（注：如果对预测值和校正值的离散误差有较好的把握，可以通过 <span class="math inline">\(Romberg\)</span> 积分法类似的想法去进一步修正误差）</p>
+<p>当 <span class="math inline">\(h\)</span> 足够小时，迭代一两次就已经能够得到较好的结果，由此就得到了改进的 <span class="math inline">\(Euler\)</span> 方法： <span class="math display">\[
+y_{k+1}\simeq y_k+\frac h2(f(t_k,y_k)+f(t_{k+1},y_k+hf(t_k,y_k)))
+\]</span></p>
+<p>### <span class="math inline">\(Runge-Kutta\)</span> 方法</p>
+<p>若直接采用 <span class="math inline">\(Taylor\)</span> 法，则有： <span class="math display">\[
+\Phi(t_k,y_k,h)=f(t_k,y_k)+\frac12h\frac d{dt}f(t_k,y_k)+\frac1{3!}h^2\frac {d^2}{dt^2}f(t_k,y_k)+...+\frac1{p!}h^{p-1}\frac{d^{p-1}}{dt^{p-1}}f(t_k,y_k)
+\]</span> 此法看似容易，然而计算 <span class="math inline">\(\frac{d^p}{dt^p}f(t,y(t))\)</span> 绝非易事，<span class="math inline">\(Runge-Kutta\)</span> 给出了一个想法，绕过了求解偏导数的麻烦</p>
+<p>以 <span class="math inline">\(p=2\)</span> 为例（称为二阶 <span class="math inline">\(Runge-Kutta\)</span> 方法），此时： <span class="math display">\[
+\Phi(t,y,h)=f(t,y(t))+\frac12 h \frac d{dt}f(t,y(t))
+\]</span> 其中： <span class="math display">\[
+\frac d{dt}f(t,y(t))=f_t&#39;(t,y)+f_y&#39;(t,y)\cdot y&#39;(t)=f&#39;_t(t,y)+f&#39;_y(t,y)\cdot f(t,y)
+\]</span> 我们用待定系数法求一 <span class="math inline">\(\Phi\)</span> 的近似解，如下： <span class="math display">\[
+\begin{aligned}
+&amp;\Psi(t,y,h)=c_1K_1+c_2K_2\\
+&amp;K_1=f(t,y)\\
+&amp;K_2=f(t+a_1h,y+a_2hK_1)
+\end{aligned}
+\]</span> 用 <span class="math inline">\(Taylor\)</span> 展开 <span class="math inline">\(K_2\)</span>（视为 <span class="math inline">\(h\)</span> 的函数），得到： <span class="math display">\[
+K_2=f(t,y)+a_1hf_t&#39;(t,y)+a_2hf(t,y)f_y&#39;(t,y)+\Omicron(h^2)
+\]</span> 于是： <span class="math display">\[
+\Psi(t,y,h)=(c_1+c_2)f(t,y)+c_2h(a_1f_t&#39;(t,y)+a_2f_y&#39;(t,y)f(t,y))+\Omicron(h^2)
+\]</span> 我们知道： <span class="math display">\[
+y(t+h)=y(t)+h\Phi(t,y,h)+\Omicron(h^3)
+\]</span> 要想使得上式将 <span class="math inline">\(\Phi\)</span> 替换为 <span class="math inline">\(\Psi\)</span> 仍然成立，这只要求： <span class="math display">\[
+(c_1+c_2)f(t,y)+c_2h(a_1f_t&#39;(t,y)+a_2f_y&#39;(t,y)f(t,y))=\Phi(x,y,h)
+\]</span> 比较各项系数，得方程组： <span class="math display">\[
+\left\{\begin{aligned}
+&amp;c_1+c_2=1\\
+&amp;c_2a_1=c_2a_2=\frac12\\
+\end{aligned}\right.
+\]</span> 可自由选取一个变量的值，从而解出该方程，这样就导出了二阶 <span class="math inline">\(Runge-Kutta\)</span> 方法<br>特别地，取 <span class="math inline">\(a_1=1\)</span>，得到 <span class="math inline">\(a_2=1,\;c_1=c_2=\frac12\)</span>，由此恰好得到改进的 <span class="math inline">\(Euler\)</span> 方法</p>
+<p>至今最常用的是一个四阶 <span class="math inline">\(Runge-Kutta\)</span> 方法： <span class="math display">\[
+\begin{aligned}
+&amp;y_{k+1}=y_k+\frac h6(K_1+2K_2+2K_3+K_4)\\
+&amp;K_1=f(t_k,y_k)\\
+&amp;K_2=f(t_k+\frac12h,y_k+\frac12hK_1)\\
+&amp;K_3=f(t_k+\frac12h,y_k+\frac12hK_2)\\
+&amp;K_4=f(t_k+h,y_k+hK_3)
+\end{aligned}
+\]</span> 其局部离散误差为 <span class="math inline">\(\Omicron^*(h^5)\)</span></p>
+<h3 id="理论误差分析">理论误差分析</h3>
+<p>我们从理论角度研究一些一般性的误差问题</p>
+<h4 id="相容性">相容性</h4>
+<p>对于等距情形，我们当然希望近似解关于 <span class="math inline">\(h\)</span> 能够收敛到精确解，而这有一个必要条件： <span class="math display">\[
+\lim_{h\to0}\left(\frac{y(t+h)-y(t)}{h}-\Phi(t,y,h)\right)=0
+\]</span> 如果 <span class="math inline">\(\Phi\)</span> 是连续函数，这个事情实际上是在说：<span class="math inline">\(y&#39;(t)=\Phi(t,y,0)\)</span>，这给出如下定义：</p>
+<p>称单步法与初值问题是<strong>相容的</strong>，若：<span class="math inline">\(\Phi(t,y,0)=f(t,y)\)</span></p>
+<p>如果只知道一个单步法是相容的，实际上并不能给出太多信息，这只能保证这个方法至少为一阶方法<br></p>
+<h4 id="收敛性">收敛性</h4>
+<p>首先我们给出收敛性的定义：任给 <span class="math inline">\(t\in[a,b]\)</span>，固定 <span class="math inline">\(t_n=t\)</span>，若有 <span class="math inline">\(\lim_{h\to0}y_n=y(t)\)</span>，则称方法是<strong>收敛的</strong><br>对于单步法，我们有如下定理：</p>
+<p>若 <span class="math inline">\(\Phi(t,y,h)\)</span> 对 <span class="math inline">\(y\)</span> 满足 <span class="math inline">\(Lipschitz\)</span> 条件，<span class="math inline">\(\forall t,h\)</span>，则单步法收敛的充分必要条件是相容条件成立<br><span class="math inline">\(Lipshitz\)</span> 条件就是说，<span class="math inline">\(\forall y_1,y_2\in\mathbb{R}\)</span>，存在 <span class="math inline">\(L&gt;0\;s.t.\)</span> <span class="math display">\[
+|\Phi(t,y_1,h)-\Phi(t,y_2,h)|\leq L|y_1-y_2|,\;\forall t,h
+\]</span> 进一步，这给出了整体离散误差的一个估计，我们记 <span class="math inline">\(R(t,h)\)</span> 为局部离散误差，对于 <span class="math inline">\(p\)</span> 阶方法来说，应该有： <span class="math display">\[
+|R(t,h)|\leq Mh^{p+1}
+\]</span> 于是，只要 <span class="math inline">\(Lipschitz\)</span> 条件满足，那么整体离散误差 <span class="math inline">\(\varepsilon_n=y(t_n)-y_n\)</span> 就满足： <span class="math display">\[
+|\varepsilon_n|\leq e^{L(b-a)}|\varepsilon_0|+h^p\frac ML(e^{L(b-a)}-1)
+\]</span> 如果有 <span class="math inline">\(\varepsilon_0=0\)</span>，那么这个 <span class="math inline">\(p\)</span> 阶单步法的整体离散误差就为 <span class="math inline">\(\Omicron^*(h^p)\)</span></p>
+<h4 id="稳定性">稳定性</h4>
+<p>稳定性是指数值稳定性，在误差分析一章中有提到；<br>在 ODE 初值问题中，我们可以通过考察对初值作扰动而产生的变化来考察稳定性，具体来说：</p>
+<p>若存在 <span class="math inline">\(h_0,C&gt;0\)</span>，使得对任意的初值 <span class="math inline">\(y_0,\bar{y}_0\)</span>，通过步长小于 <span class="math inline">\(h_0\)</span> 的单步法得到的相应的解 <span class="math inline">\(y_n,\bar{y}_n\)</span>，都满足： <span class="math display">\[
+|y_n-\bar{y}_n|\leq C|y_0-\bar{y}_0|
+\]</span> 就称单步法是<strong>稳定的</strong>；事实上，只要 <span class="math inline">\(\Phi(t,y,h)\)</span> 对 <span class="math inline">\(y\)</span> 满足 <span class="math inline">\(Lipschitz\)</span> 条件，那么单步法就是稳定的</p>
+<p>而在实际应用中，讨论某个固定的 <span class="math inline">\(h\)</span> 的情形更有意义，为此引入<strong>绝对稳定性</strong>：</p>
+<p>称单步法是<strong>绝对稳定的</strong>，若由初值 <span class="math inline">\(y_k,\bar{y}_k\)</span> 满足： <span class="math inline">\(\bar{y}_k=y_k+\delta\)</span> 分别给出的 <span class="math inline">\(y_{k+1},\bar{y}_{k+1}\)</span> 都有：<span class="math inline">\(\vert \bar{y}_{k+1}-y_{k+1}\vert&lt;\vert\delta\vert\)</span><br>通常，我们只讨论初值问题 <span class="math inline">\(y&#39;=\mu y\)</span> 的绝对稳定性，称 <span class="math inline">\((\alpha,\beta)\)</span> 为绝对稳定区间，若任给 <span class="math inline">\(\mu h\in(\alpha,\beta)\)</span> 单步法都绝对稳定</p>
+<p>举例：考虑 <span class="math inline">\(Euler\)</span> 法的绝对稳定区间，这由： <span class="math display">\[
+|\bar{y}_{k+1}-y_{k+1}|=|1+\mu h||\delta|&lt;|\delta|
+\]</span> 不难看出 <span class="math inline">\(\mu h\in(-2,0)\)</span></p>
+<h2 id="多步法">多步法</h2>
+<p>与单步法相对的，多步法是说递推算法形如：<span class="math inline">\(y_k\simeq \varphi(y_{k-},...,y_k),\;m&gt;1\)</span></p>
+<p>我们仍然考虑一些具体方法，然后理论分析误差</p>
+<h3 id="adams-方法"><span class="math inline">\(Adams\)</span> 方法</h3>
+<p>使用数值积分法 <span class="math inline">\(y(t_{k+1})-y(t_k)=\int_{t_k}^{t_{k+1}}f(t,y)dt\)</span> 的问题在于右边的积分公式一般不能显式地给出<br><span class="math inline">\(Adams\)</span> 方法指出，可以用 <span class="math inline">\(y_{k-m},...,y_k\)</span> 这些已知点作 <span class="math inline">\(f(t,y)\)</span> 的插值多项式 <span class="math inline">\(p_m(t)\)</span>，于是就得到近似公式： <span class="math display">\[
+y_{k+1}\simeq y_k+\int_{t_k}^{t_{k+1}}p_m(t)dt
+\]</span> 可以证明，<span class="math inline">\(m\)</span> 步显式 <span class="math inline">\(Adams\)</span> 方法至少为 <span class="math inline">\(m\)</span> 阶方法</p>
+<p>亦可以将 <span class="math inline">\(y_{k+1}\)</span> 也作为插值点，由此得到方法被称为隐式 <span class="math inline">\(Adams\)</span> 方法<br>可以证明 ，<span class="math inline">\(m\)</span> 步隐式 <span class="math inline">\(Adams\)</span> 方法至少为 <span class="math inline">\((m+1)\)</span> 阶方法</p>
+<p>（注：<span class="math inline">\(m=1\)</span> 时，隐式 <span class="math inline">\(Adams\)</span> 公式恰为梯形公式）</p>
+<p>由于是隐式方法，通常也需要配合 <strong>PECE</strong> 模式使用，这里不详细叙述</p>
+<p>还有一被称为 <span class="math inline">\(Milne\)</span> 方法的多步法与 <span class="math inline">\(Adams\)</span> 方法类似，只是将考虑的积分区间扩大： <span class="math inline">\(y(t_{n+1})-y(t_{n-p})=\int_{t_{n-p}}^{t_{n+1}}f(t,y)dt\)</span><br>然后仍然考虑使用插值多项式代替 <span class="math inline">\(f(t,y)\)</span>，故也不详细叙述</p>
+<h3 id="hamming-方法"><span class="math inline">\(Hamming\)</span> 方法</h3>
+<p>与 <span class="math inline">\(Runge-Kutta\)</span> 方法的想法类似，在等距情形，我们可以使用待定系数结合 <span class="math inline">\(Taylor\)</span> 展开的方法来构造多步法，令： <span class="math display">\[
+L(y(t),h)=\sum_{j=0}^k(\alpha_jy(t+jh)-h\beta_jy&#39;(t+jh))
+\]</span> 视为 <span class="math inline">\(h\)</span> 的函数，考虑 <span class="math inline">\(h=0\)</span> 处的 <span class="math inline">\(Taylor\)</span> 展开，我们知道其必然形如： <span class="math display">\[
+L(y(t),h)=c_0y(t)+c_1hy&#39;(t)+...+c_ph^py^{(p)}(t)+...
+\]</span> 其中 <span class="math inline">\(c_j\)</span> 与 <span class="math inline">\(y(t)\)</span> 无关，故我们分别令 <span class="math inline">\(y(t)=1,t,t^2,...\)</span> 并取 <span class="math inline">\(t=0\)</span>，就不难得到 <span class="math inline">\(c_j\)</span> 的值： <span class="math display">\[
+\begin{aligned}
+&amp;c_0=\alpha_0+\alpha_1+...+\alpha_k\\
+&amp;c_1=\alpha_1+2\alpha_2+...+k\alpha_k-(\beta_0+\beta_1+...+\beta_k)\\
+&amp;...\\
+&amp;c_p=\frac1{p!}(\alpha_1+2^p\alpha_2+...+k^p\alpha_k)-\frac1{(p-1)!}(\beta_1+2^{p-1}\beta_2+...+k^{p-1}\beta_k)\\
+&amp;...
+\end{aligned}
+\]</span> 要想使得 <span class="math inline">\(L(y(t),h)\)</span> 导出一个至少 <span class="math inline">\(p\)</span> 阶的线性多步法，这就要求：<span class="math inline">\(c_0=c_1=...=c_p=0\)</span><br>解出 <span class="math inline">\(\alpha_j,\beta_j\)</span> 即可</p>
+<p>注：<span class="math inline">\(Hamming\)</span> 方法似乎只是 <span class="math inline">\(k=3,\;p=4,\;\alpha_k=1,\;\alpha_{k-1}=\beta_0=0\)</span> 时导出的特例</p>
+<h3 id="理论误差分析-1">理论误差分析</h3>
+<p>与单步法对应小节类似，我们考察形如： <span class="math display">\[
+\sum_{j=0}^ka_jy_{m+j}=h \sum_{j=0}^k\beta_j f(t_{m+j},y_{m+j})
+\]</span> 这样的线性 <span class="math inline">\(k\)</span> 步法，我们记： <span class="math display">\[
+\rho(\lambda)=\alpha_k\lambda^k+\alpha_{k-1}\lambda^{k-1}+...+\alpha_1\lambda+\alpha_0\\
+\sigma(\lambda)=\beta_k\lambda^k+\beta_{k-1}\lambda^{k-1}+...+\beta_1\lambda+\beta_0\\
+\]</span> 显然，这两个多项式与线性 <span class="math inline">\(k\)</span> 步法一一对应，称 <span class="math inline">\(\rho(\lambda)\)</span> 为线性 <span class="math inline">\(k\)</span> 步法的特征多项式</p>
+<p>仿照单步法的讨论，有如下结果：</p>
+<ul>
+<li><p>相容性：称线性 <span class="math inline">\(k\)</span> 步法是<strong>相容的</strong>，若它至少是一阶方法</p>
+<p>可以证明，这等价于：<span class="math inline">\(\rho(1)=0,\;\rho&#39;(1)=\sigma(1)\)</span></p></li>
+<li><p>收敛性：称线性 <span class="math inline">\(k\)</span> 步法是<strong>收敛的</strong>，若任给 <span class="math inline">\(t\in[a,b]\)</span>，固定 <span class="math inline">\(t_n=t\)</span>，都有 <span class="math inline">\(\lim_{h\to0}y_n=y(t)\)</span></p>
+<p>对于线性 <span class="math inline">\(k\)</span> 步法而言，难以考察收敛性，但是有等价关系：收敛 <span class="math inline">\(\Leftrightarrow\)</span> 相容且稳定</p></li>
+<li><p>稳定性：称线性 <span class="math inline">\(k\)</span> 步法是<strong>稳定的</strong>，若存在 <span class="math inline">\(h_0,C&gt;0\)</span>，使得对任意的初值 <span class="math inline">\(y_0,\bar{y}_0\)</span><br>通过步长小于 <span class="math inline">\(h_0\)</span> 的线性 <span class="math inline">\(k\)</span> 步法得到的相应的解 <span class="math inline">\(y_n,\bar{y}_n\)</span>，都满足： <span class="math display">\[
+|y_n-\bar{y}_n|\leq C\mathop{max}_\limits{0\leq j \leq k-1}|y_j-\bar{y}_j|
+\]</span></p>
+<p>可以证明，这等价于 <span class="math inline">\(\rho(\lambda)\)</span> 满足一个所谓的<strong>特征根条件</strong>，即：</p>
+<p><span class="math inline">\(\rho(\lambda)\)</span> 的所有根都在单位圆中，且在单位圆上的根只能是单重根</p></li>
+<li><p>强稳定性：上述稳定性一般又称弱稳定性（误差可能会震荡），特征根条件称为弱根条件，若进一步满足：</p>
+<p><span class="math inline">\(\rho(\lambda)\)</span> 的全部根除了 <span class="math inline">\(\lambda =1\)</span> 外均在单位圆内（强根条件），则称满足<strong>强稳定性</strong></p></li>
+<li><p>绝对稳定性：仍然只讨论 <span class="math inline">\(y&#39;=\mu y\)</span>，此时线性 <span class="math inline">\(k\)</span> 步法可以看成 <span class="math inline">\(k\)</span> 阶常系数递推数列，有特征方程： <span class="math display">\[
+\rho(\lambda)-\mu h\sigma(\lambda) = 0
+\]</span> 我们称线性 <span class="math inline">\(k\)</span> 步法是<strong>绝对稳定的</strong>，若上述方程的根 <span class="math inline">\(\lambda_r\)</span> 都满足 <span class="math inline">\(|\lambda_r|&lt;1\)</span><br>称 <span class="math inline">\((\alpha,\beta)\)</span> 为绝对稳定区间，若任给 <span class="math inline">\(\mu h\in(\alpha,\beta)\)</span> 多步法都绝对稳定</p>
+<p>可以证明，当 <span class="math inline">\(h\)</span> 接近 <span class="math inline">\(0\)</span> 时，想要达成绝对稳定必须要有 <span class="math inline">\(\mu h&lt;0\)</span></p></li>
+</ul>
+<h2 id="高阶-ode-和-ode-方程组">高阶 ODE 和 ODE 方程组</h2>
+<p>对于一阶 ODE 方程组，只要简单地记 <span class="math inline">\(Y=(y_1,...,y_m),\;F=(f_1,...,f_m),\;\Eta=(\eta_1,...,\eta_m)\)</span>，那么初值问题就形如： <span class="math display">\[
+\left\{\begin{aligned}
+&amp;Y&#39;=F(t,Y),\;a\leq t \leq b\\
+&amp;Y(a)=\Eta
+\end{aligned}\right.
+\]</span> 之前讨论的方法对此是完全适用的，而对于高阶 ODE： <span class="math display">\[
+\left\{\begin{aligned}
+&amp;y^{(m)}=f(t,y,y&#39;,...,y^{(m-1)}),\;a\leq t \leq b\\
+&amp;y(a)=\eta_1,\;y&#39;(a)=\eta_2,...,y^{(m-1)}(a)=\eta_m
+\end{aligned}\right.
+\]</span> 只要令：<span class="math inline">\(y_1=y,\;y_2=y&#39;,...,y_m=y^{(m-1)}\)</span>，就化为了方程组： <span class="math display">\[
+\left\{\begin{aligned}
+&amp;y_1&#39;=y_2,\;y_1(a)=\eta_1\\
+&amp;y_2&#39;=y_3,\;y_2(a)=\eta_2\\
+&amp;...\\
+&amp;y_m&#39;=f(t,y_1,y_2,...,y_m),\;y_m(a)=\eta_m\\
+\end{aligned}\right.
+\]</span> 故无需多言</p>
 <h1 id="后记">后记</h1>
 <ol type="1">
-<li><p>这门课其实还讲了点 <strong>M-P 神经网络</strong>，然而感觉讲的太快太浅，偏科普性质（问就是感觉自己学了个寂寞），故没有整理至此</p></li>
-<li><p>封面是我有一次把梯度下降方向搞反了搞成了“梯度上升”的图像捏，挺壮观的是不是（（（</p></li>
-<li><p>目前内容截至到期中，期末的等期末再说（</p></li>
+<li>这门课其实还讲了点 <strong>M-P 神经网络</strong>，然而感觉讲的太快太浅，偏科普性质（问就是感觉自己学了个寂寞），故没有整理至此。</li>
+<li>没有整理<strong>差分方程</strong>一节，个人认为本质上跟 <span class="math inline">\(k\)</span> 阶递推数列相关理论没什么区别，反正都是线代的活。</li>
+<li>封面是我有一次把梯度下降方向搞反了搞成了“梯度上升”的图像捏，挺壮观的是不是（（（</li>
 </ol>
 </div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">dasasdhba</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://dasasdhba.github.io/study-numeric-analysis/">http://dasasdhba.github.io/study-numeric-analysis/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://dasasdhba.github.io" target="_blank">dasasdhba</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post_share"><div class="social-share" data-image="https://s1.ax1x.com/2023/04/24/p9mR80O.jpg" data-sites="wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/study-FFT/"><img class="next_cover lazyload" data-src="https://allsignalprocessing.com/wp-content/uploads/2014/06/fast-fourier-transform.png" onerror="onerror=null;src='http://yanxuan.nosdn.127.net/17d506bee5c563ab6285b5b1c2e95599.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">「数值分析」浅析快速傅里叶变换 FFT</div></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/study-FFT/" title="「数值分析」浅析快速傅里叶变换 FFT"><img class="relatedPosts_cover lazyload"data-src="https://allsignalprocessing.com/wp-content/uploads/2014/06/fast-fourier-transform.png"><div class="relatedPosts_main is-center"><div class="relatedPosts_date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 2023-03-29</div><div class="relatedPosts_title">「数值分析」浅析快速傅里叶变换 FFT</div></div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
 var guest_info = 'nick,mail,link'.split(',').filter(function(item){
