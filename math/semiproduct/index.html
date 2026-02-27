@@ -1,0 +1,225 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>「群论」谈半直积的提出动机 | das's Blog</title><meta name="description" content="学习一个新的数学对象，最忌讳的就是直接阅读定义本身，而不去关注这些定义背后的提出动机。值得一提的是，「提出动机」不一定非要尊重历史，对我来说，寻找一个最自然的「导出路径」，才更能加深自己的理解。拿一个基础的例子来说，矩阵的相似本质上可以解释成线性空间的基变换，这就比莫名其妙地给出一个 \(P A P^{-1}\) 的所谓的等价关系要来得自然得多。我看过很多代数的教材，可我每次看到半直积的定义，"><meta name="keywords" content="数学，代数"><meta name="author" content="dasasdhba"><meta name="copyright" content="dasasdhba"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/icon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="twitter:card" content="summary"><meta name="twitter:title" content="「群论」谈半直积的提出动机"><meta name="twitter:description" content="学习一个新的数学对象，最忌讳的就是直接阅读定义本身，而不去关注这些定义背后的提出动机。值得一提的是，「提出动机」不一定非要尊重历史，对我来说，寻找一个最自然的「导出路径」，才更能加深自己的理解。拿一个基础的例子来说，矩阵的相似本质上可以解释成线性空间的基变换，这就比莫名其妙地给出一个 \(P A P^{-1}\) 的所谓的等价关系要来得自然得多。我看过很多代数的教材，可我每次看到半直积的定义，"><meta name="twitter:image" content="https://image.slideserve.com/996565/fast-fourier-transform1-l.jpg"><meta property="og:type" content="article"><meta property="og:title" content="「群论」谈半直积的提出动机"><meta property="og:url" content="http://dasasdhba.github.io/math/semiproduct/"><meta property="og:site_name" content="das's Blog"><meta property="og:description" content="学习一个新的数学对象，最忌讳的就是直接阅读定义本身，而不去关注这些定义背后的提出动机。值得一提的是，「提出动机」不一定非要尊重历史，对我来说，寻找一个最自然的「导出路径」，才更能加深自己的理解。拿一个基础的例子来说，矩阵的相似本质上可以解释成线性空间的基变换，这就比莫名其妙地给出一个 \(P A P^{-1}\) 的所谓的等价关系要来得自然得多。我看过很多代数的教材，可我每次看到半直积的定义，"><meta property="og:image" content="https://image.slideserve.com/996565/fast-fourier-transform1-l.jpg"><meta property="article:published_time" content="2026-02-27T07:30:00.000Z"><meta property="article:modified_time" content="2026-02-27T07:26:45.962Z"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://dasasdhba.github.io/math/semiproduct/"><link rel="next" title="个人 MF 开发资源汇总" href="http://dasasdhba.github.io/personal/mfengine/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://dasasdhba.github.io/","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  highlightShrink: 'false',
+  isFontAwesomeV5: false,
+  isPhotoFigcaption: false
+  
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isSidebar: false  
+  }</script><noscript><style>
+#page-header {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><meta name="generator" content="Hexo 4.2.1"><link rel="alternate" href="/atom.xml" title="das's Blog" type="application/atom+xml">
+</head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">8</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">4</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">4</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><div class="post-bg" id="nav" style="background-image: url(https://image.slideserve.com/996565/fast-fourier-transform1-l.jpg)"><div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">das's Blog</a></span><span class="pull_right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span></span></div><div id="post-info"><div id="post-title"><div class="posttitle">「群论」谈半直积的提出动机</div></div><div id="post-meta"><div class="meta-firstline"><time class="post-meta__date"><span class="post-meta__date-created" title="发表于 2026-02-27 15:30:00"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2026-02-27</span><span class="post-meta__separator">|</span><span class="post-meta__date-updated" title="更新于 2026-02-27 15:26:45"><i class="fa fa-history" aria-hidden="true"></i> 更新于 2026-02-27</span></time><span class="post-meta__categories"><span class="post-meta__separator">|</span><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/%E6%95%B0%E5%AD%A6/">数学</a></span></div><div class="meta-secondline"> </div><div class="meta-thirdline"><span class="post-meta-pv-cv"><i class="fa fa-eye post-meta__icon" aria-hidden="true"> </i><span>阅读量:</span><span id="busuanzi_value_page_pv"></span></span><span class="post-meta-commentcount"><span class="post-meta__separator">|</span><i class="post-meta__icon fa fa-comment-o" aria-hidden="true"></i><span>评论数:</span><a href="/math/semiproduct/#post-comment" itemprop="discussionUrl"><span class="valine-comment-count comment-count" data-xid="/math/semiproduct/" itemprop="commentCount"></span></a></span></div></div></div></div><main class="layout_post" id="content-inner"><article id="post"><div id="article-container"><p>学习一个新的数学对象，最忌讳的就是直接阅读定义本身，而不去关注这些定义背后的提出动机。值得一提的是，「提出动机」不一定非要尊重历史，对我来说，寻找一个最自然的「导出路径」，才更能加深自己的理解。拿一个基础的例子来说，矩阵的相似本质上可以解释成线性空间的基变换，这就比莫名其妙地给出一个
+<span class="math inline">\(P A P^{-1}\)</span>
+的所谓的等价关系要来得自然得多。我看过很多代数的教材，可我每次看到半直积的定义，都完全无法理解其由来。诚然，我很容易手动验证，半直积定义出来的东西，确实是一个奇奇怪怪的群，但是这个群的意义在哪？这是我读了这么多教材，听了很多课，一直都没有得到解答的问题。</p>
+<p>幸运的是，我最近读论文的时候，偶然间真正看到了半直积结构的意义，欣喜之余，记录于此。</p>
+<h2 id="串联一组置换">「串联」一组置换</h2>
+<p>考虑 <span class="math inline">\(\{1,2,3\}\)</span>
+上的置换，取旋转：<span class="math inline">\(r:(a,b,c) \mapsto
+(c,a,b)\)</span>，对称：<span class="math inline">\(s:(a,b,c)\mapsto
+(a,c,b)\)</span>，容易验证：</p>
+<p><span class="math display">\[
+\langle r \rangle \simeq \mathbb Z_3, \langle s \rangle \simeq \mathbb
+Z_2
+\]</span></p>
+<p>问题：<span class="math inline">\(\langle r \rangle \langle s
+\rangle= \{ r^i s^j: i,j \in \mathbb Z\}\)</span> 可以成为作用于 <span
+class="math inline">\(\{1,2,3\}\)</span> 上的自然的置换群吗？</p>
+<p>为了让 <span class="math inline">\(\langle r \rangle \langle s
+\rangle\)</span> 能够作为置换群自然地作用在 <span
+class="math inline">\(\{1,2,3\}\)</span>
+上，首先要考虑的是，在置换乘法意义下，是否有 <span
+class="math inline">\(r_1 s_1 r_2 s_2 \in \langle r \rangle \langle s
+\rangle\)</span>？通俗地说，「旋转-对称-旋转-对称」的组合，是否还是一组「旋转-对称」？幸运的是，这是可以做到的，因为
+$s r s<sup>{-1}=r</sup>{-1} r $，所以总是有：</p>
+<p><span class="math display">\[
+r_1 s_1 r_2 s_2 = (r_1 s_1 r_2 s_1^{-1}) s_1 s_2 \in \langle r \rangle
+\langle s \rangle
+\]</span></p>
+<p>于是，我们可以定义 <span class="math inline">\(r_1 s_1 \odot r_2 s_2
+:= (r_1 s_1 r_2 s_1^{-1}) s_1 s_2\)</span>，那么，这个 <span
+class="math inline">\(\odot\)</span>
+能否构成群的乘法？答案显而易见，因为这个 <span
+class="math inline">\(\odot\)</span> 跟置换乘法没有区别，且 <span
+class="math inline">\(r_k s_k\)</span> 总有逆元 <span
+class="math inline">\((s_k^{-1} r_k^{-1} s_k) s_k^{-1}\)</span>.
+如果读者有一定的对称群论基础，应该不难发现，<span
+class="math inline">\(\langle r \rangle \langle s \rangle\)</span>
+就是二面体群 <span
+class="math inline">\(D_6\)</span>，这个群的乘法并不是简单的直积关系，无法同构于外直积群
+<span class="math inline">\(\langle r \rangle \times \langle s \rangle
+\simeq \mathbb Z_6\)</span>. 但是，如果将 <span
+class="math inline">\(\odot\)</span>
+视为内直积的形式，这就启发我们在集合 <span class="math inline">\(\langle
+r \rangle \times \langle s \rangle\)</span> 上定义另外一种乘法：</p>
+<p><span class="math display">\[
+(r_1, s_1) \odot (r_2, s_2) := (r_1 s_1 r_2 s_1^{-1}, s_1 s_2)
+\]</span></p>
+<p>根据前面的推导，这种乘法定义出来的群结构，同构于 <span
+class="math inline">\(\langle r \rangle \langle s \rangle \simeq
+D_6\)</span>，我们将这种结构记作 <span class="math inline">\(\langle
+r\rangle\)</span> 与 <span class="math inline">\(\langle s
+\rangle\)</span> 的半直积 <span class="math inline">\(\langle r \rangle
+\rtimes \langle s \rangle \simeq \mathbb Z_3 \rtimes \mathbb
+Z_2\)</span>.
+到这里，半直积的意义就清晰可见了——将一组「旋转-对称」打包，并找到一种特定的乘法，使得「旋转-对称」乘上「旋转-对称」仍然是「旋转-对称」，从而构成一个所谓的半直积群结构.</p>
+<h2 id="一般情形的推广">一般情形的推广</h2>
+<p>从 <span class="math inline">\(D_6 \simeq \mathbb Z_3 \rtimes \mathbb
+Z_2\)</span>
+这个例子出发，将半直积结构的本质要求提取出来，我们就可以得到一般的半直积定义了.
+考虑两个一般的群 <span
+class="math inline">\(N,H\)</span>，令它们都作用在 <span
+class="math inline">\(\Omega\)</span> 上，即将 <span
+class="math inline">\(N,H\)</span> 视为 <span
+class="math inline">\(\mathrm{Sym}(\Omega)\)</span> 的子群. 若 <span
+class="math inline">\(N,H\)</span> 在 <span
+class="math inline">\(\mathrm{Sym}(\Omega)\)</span> 中的乘法意义下，有
+<span class="math inline">\(\forall h \in H, h N h^{-1} = N\)</span>，即
+<span class="math inline">\(H\)</span> 正规化 <span
+class="math inline">\(N\)</span>，那么集合 <span class="math inline">\(N
+\times H\)</span> 上存在半直积结构 <span class="math inline">\(N \rtimes
+H\)</span>，其中乘法定义为：</p>
+<p><span class="math display">\[
+(n_1,h_1) \odot (n_2,h_2) := (n_1 h_1 n_2 h_1^{-1}, h_1 h_2)
+\]</span></p>
+<p>敏锐的读者可能会发现，这个定义看上去似乎依赖 <span
+class="math inline">\(N,H\)</span> 作用在 <span
+class="math inline">\(\Omega\)</span>
+上的方式，然而具体的作用方式我们并没有点出来，因为这在本质上并不重要.
+那么，真正重要的是什么？让我们回到另一个等价的定义，也是各大经典教材中能找到的经典定义——设
+<span class="math inline">\(N,H\)</span> 是两个一般的群，<span
+class="math inline">\(\varphi: H \to \mathrm{Aut} (N), h\mapsto
+\varphi_h\)</span> 为群同态，那么集合 <span class="math inline">\(N
+\times H\)</span> 上存在半直积结构 <span class="math inline">\(N
+\rtimes_\varphi H\)</span>，其中乘法定义为：</p>
+<p><span class="math display">\[
+(n_1,h_1) \odot_\varphi (n_2,h_2) := (n_1 \varphi_{h_1}(n_2), h_1 h_2)
+\]</span></p>
+<p>这个定义非常容易引起初学者的困惑，我们来逐步拆解，为什么说这跟上面给出的定义是等价的.
+下面且记 <span class="math inline">\(G=N \rtimes_\varphi H\)</span>，则
+<span class="math inline">\(N,H\)</span> 分别同构于 <span
+class="math inline">\(G\)</span> 的两个子群 <span
+class="math inline">\(N \times \{e_H\}, \{e_G\} \times
+H\)</span>，我们直接将 <span class="math inline">\(N,H\)</span> 视为
+<span class="math inline">\(G\)</span> 的子群，不难验证：</p>
+<ol type="1">
+<li><span class="math inline">\(N \cap H = \{e_G\}\)</span>.</li>
+<li><span class="math inline">\((n,h)=(n,e_H)\odot_\varphi
+(e_G,h)\)</span>，即 <span class="math inline">\(G=N H\)</span>.</li>
+<li><span class="math inline">\(p:G \to H, (n,h) \mapsto h\)</span>
+是满同态，且 <span class="math inline">\(\ker p = N\)</span>，即 <span
+class="math inline">\(N\)</span> 是 <span
+class="math inline">\(G\)</span> 的正规子群.</li>
+<li><span class="math inline">\((e_N,h)\odot_\varphi
+(n,e_H)\odot_\varphi (e_N,h)^{-1}=(\varphi_h(n),h)\odot_\varphi
+(e_N,h^{-1})=(\varphi_h(n),e_H)\)</span>，即 <span
+class="math inline">\(\varphi_h (n)= h n h^{-1}\)</span>.</li>
+</ol>
+<p>如何呢？<span class="math inline">\(N\)</span> 本质上就是 <span
+class="math inline">\(G\)</span> 的正规子群，<span
+class="math inline">\(\varphi_h\)</span> 本质上就是 <span
+class="math inline">\(G\)</span> 上的共轭作用.
+聪明的读者可能已经发现了，在最初的定义中，<span
+class="math inline">\(\Omega\)</span>
+具体是什么，作用方式具体如何，这在本质上并不重要，重要的是 <span
+class="math inline">\(H\)</span> 能够在 <span
+class="math inline">\(\mathrm{Sym}(\Omega)\)</span> 上正规化 <span
+class="math inline">\(N\)</span>，而这一点已经由 <span
+class="math inline">\(N \unlhd G\)</span> 所保证了. 因此，随便让 <span
+class="math inline">\(G\)</span> 作用在某个 <span
+class="math inline">\(\Omega\)</span> 上，或者说任取群同态 <span
+class="math inline">\(G\to
+\mathrm{Sym}(\Omega)\)</span>，结果都是一样的. 例如，使用经典的 Cayley
+定理，<span class="math inline">\(G\)</span> 可以自然地左乘作用在 <span
+class="math inline">\(G\)</span> 或者 <span class="math inline">\(G /
+N\)</span> 上；<span class="math inline">\(D_6 \simeq \mathbb Z_3
+\rtimes \mathbb Z_2\)</span>
+之所以是一个相当直观的例子，正是因为这些群都可以自然地嵌入到 <span
+class="math inline">\(S_3\)</span> 当中.</p>
+<h2 id="结语">结语</h2>
+<p>借用 <em>Paolo Aluffi</em> 的话来说，"One of the best ways to
+‘understand’ a group is to let it act on something".
+从群作用的角度来看半直积，它本质上就是将两种作用「串联」起来的结构，而为了能让这个结构成为群结构，我们要求其中一个作用能够正规化另一个作用，仅此而已.</p>
+<p>最后，做一个小小的测试吧，当你真正理解半直积之后，所谓圈积也就不足为奇了.
+设 <span class="math inline">\(T\)</span> 为群，<span
+class="math inline">\(H \leq S_n\)</span>，考虑群同态：</p>
+<p><span class="math display">\[
+\begin{aligned}
+\varphi:H &amp;\to \mathrm{Aut}(T^n)\\
+\varphi_h(t_1,t_2,\dots,t_n)&amp;\mapsto
+(t_{h(1)},t_{h(2)},\dots,t_{h(n)})
+\end{aligned}
+\]</span></p>
+<p>定义圈积 <span class="math inline">\(T \wr H:= T^n \rtimes_\varphi
+H\)</span>，你现在能否轻松理解其含义了呢？</p>
+</div><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">dasasdhba</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://dasasdhba.github.io/math/semiproduct/">http://dasasdhba.github.io/math/semiproduct/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://dasasdhba.github.io" target="_blank">das's Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%95%B0%E5%AD%A6%EF%BC%8C%E4%BB%A3%E6%95%B0/">数学，代数</a></div><div class="post_share"><div class="social-share" data-image="https://image.slideserve.com/996565/fast-fourier-transform1-l.jpg" data-sites="wechat,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"/><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/personal/mfengine/"><img class="next_cover lazyload" data-src="http://yanxuan.nosdn.127.net/563687168bb8b0a6d01957db2a0824c1.png" onerror="onerror=null;src='/img/404.jpg'"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">个人 MF 开发资源汇总</div></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://unpkg.com/valine/dist/Valine.min.js"></script><script>var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  appId: 'EOAokpc3LI1jWthsKJLEtuBy-gzGzoHsz',
+  appKey: 'InUfga6TN89TnYNKelRKLuDQ',
+  placeholder: '请输入文本',
+  avatar: 'mp',
+  meta: guest_info,
+  pageSize: '10',
+  lang: 'zh-CN',
+  recordIP: true,
+  serverURLs: '',
+  mathjax: false
+});</script></div></article></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2026 By dasasdhba</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换" target="_self">繁</a></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+    processEscapes: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+  },
+  CommonHTML: {
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "HTML-CSS": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  },
+  "SVG": { 
+    linebreaks: { automatic: true, width: "90% container" }
+  }
+});
+</script><script type="text/x-mathjax-config">MathJax.Hub.Queue(function() {
+  var all = MathJax.Hub.getAllJax(), i;
+  for (i=0; i < all.length; i += 1) {
+    all[i].SourceElement().parentNode.className += ' has-jax';
+  }
+});
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><script defer id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="/js/search/local-search.js"></script></body></html>
